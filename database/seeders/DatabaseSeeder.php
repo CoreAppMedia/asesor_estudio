@@ -49,10 +49,15 @@ class DatabaseSeeder extends Seeder
             $this->command->info('Questions already exist in the database. Skipping.');
         }
 
-        // 4. Asegurar que los archivos JSON de contenido estén generados en el almacenamiento del contenedor
-        $this->call([
-            ContentJsonSeeder::class,
-        ]);
+        // 4. Asegurar que los archivos JSON de contenido estén generados si no existen
+        if (!file_exists(storage_path('content/matematicas_1_u1.json'))) {
+            $this->call([
+                ContentJsonSeeder::class,
+            ]);
+            $this->command->info('JSON files generated successfully.');
+        } else {
+            $this->command->info('JSON files already exist. Skipping generation to preserve Git content.');
+        }
 
         // 5. Invalidar la caché de la lista de cursos para que la página de inicio cargue los nuevos datos de inmediato
         \Illuminate\Support\Facades\Cache::forget('cursos_lista_completa');
