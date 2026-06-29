@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // Crear usuario administrador inicial
-        User::factory()->create([
+        User::create([
             'name' => 'Profesor Administrador',
             'email' => 'admin@cch.unam.mx',
             'password' => bcrypt('password'),
