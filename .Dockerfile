@@ -93,6 +93,7 @@ EXPOSE ${PORT}
 # Comando de arranque seguro: limpiar caché, cachear para producción,
 # ejecutar migraciones sin borrar datos (usando migrate --force) y arrancar Apache
 CMD php artisan config:clear && \
+    php artisan cache:clear && \
     php artisan config:cache && \
     php artisan route:cache && \
     php artisan view:cache && \

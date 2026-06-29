@@ -53,5 +53,8 @@ class DatabaseSeeder extends Seeder
         $this->call([
             ContentJsonSeeder::class,
         ]);
+
+        // 5. Invalidar la caché de la lista de cursos para que la página de inicio cargue los nuevos datos de inmediato
+        \Illuminate\Support\Facades\Cache::forget('cursos_lista_completa');
     }
 }
