@@ -1,0 +1,107 @@
+{
+    "introduccion": "Las ecuaciones lineales son la base del razonamiento algebraico aplicado a la resolución de problemas. Aprenderemos a interpretar enunciados reales, formular ecuaciones y aplicar reglas de despeje.",
+    "objetivos": [
+        "Comprender la igualdad matemática.",
+        "Despejar variables lineales aplicando operaciones inversas.",
+        "Modelar y resolver problemas mediante ecuaciones de primer grado."
+    ],
+    "conocimientos_previos": [
+        "Manejo de variables, simplificación de términos y operaciones aritméticas."
+    ],
+    "explicacion": [
+        {
+            "titulo": "1. Concepto de igualdad y propiedades",
+            "texto": "Una ecuación es una igualdad entre dos expresiones que se mantiene al aplicar la misma operación en ambos miembros."
+        },
+        {
+            "titulo": "2. Resolución de ecuaciones de primer grado",
+            "texto": "Consiste en aislar la incógnita utilizando operaciones inversas para encontrar su valor equivalente."
+        }
+    ],
+    "conceptos_clave": [
+        {
+            "concepto": "Ecuación lineal",
+            "definicion": "Igualdad en la que la variable tiene exponente 1."
+        },
+        {
+            "concepto": "Despejar",
+            "definicion": "Aislar una variable en un miembro de la ecuación."
+        }
+    ],
+    "ejemplos": [
+        {
+            "titulo": "Ejemplo 1.1: Ecuación Aditiva",
+            "explicacion": "Resuelve: \\(x + 4 = 10\\).",
+            "solucion": "1. Restamos 4 en ambos lados: \\(x + 4 - 4 = 10 - 4\\).\n2. Obtenemos \\(x = 6\\)."
+        },
+        {
+            "titulo": "Ejemplo 1.2: Ecuación Multiplicativa",
+            "explicacion": "Resuelve: \\(3x = 12\\).",
+            "solucion": "1. Dividimos ambos lados entre 3: \\(\\frac{3x}{3} = \\frac{12}{3}\\).\n2. Obtenemos \\(x = 4\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.1: Ecuación con dos operaciones",
+            "explicacion": "Resuelve: \\(2x + 5 = 15\\).",
+            "solucion": "1. Restamos 5: \\(2x = 10\\).\n2. Dividimos entre 2: \\(x = 5\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.2: Incógnitas en ambos miembros",
+            "explicacion": "Resuelve: \\(4x - 3 = 2x + 7\\).",
+            "solucion": "1. Restamos \\(2x\\) en ambos miembros: \\(2x - 3 = 7\\).\n2. Sumamos 3: \\(2x = 10\\).\n3. Dividimos entre 2: \\(x = 5\\)."
+        }
+    ],
+    "errores_comunes": [
+        {
+            "error": "Olvidar el cambio de signo",
+            "ejemplo_incorrecto": "Pasar \\(x + 2 = 5\\) a \\(x = 5 + 2\\).",
+            "correccion": "Al mover términos, se usa la operación inversa: \\(x = 5 - 2 = 3\\)."
+        }
+    ],
+    "ejercicios_guiados": [
+        {
+            "instruccion": "Resuelve: \\(x - 5 = 2\\).",
+            "guia": "Pista: Suma 5 en ambos miembros de la ecuación."
+        },
+        {
+            "instruccion": "Resuelve: \\(2x = 10\\).",
+            "guia": "Pista: Divide ambos miembros entre 2."
+        },
+        {
+            "instruccion": "Resuelve: \\(x + 7 = 3\\).",
+            "guia": "Pista: Resta 7 de ambos miembros de la ecuación."
+        },
+        {
+            "instruccion": "Resuelve: \\(\\frac{x}{3} = 4\\).",
+            "guia": "Pista: Multiplica ambos miembros por 3."
+        },
+        {
+            "instruccion": "Resuelve: \\(5 + x = 12\\).",
+            "guia": "Pista: Resta 5 de ambos miembros de la ecuación."
+        },
+        {
+            "instruccion": "Resuelve: \\(3x - 2 = 13\\).",
+            "guia": "Pista: Suma primero 2 en ambos lados y luego divide entre 3."
+        },
+        {
+            "instruccion": "Resuelve: \\(5x + 4 = 24\\).",
+            "guia": "Pista: Resta 4 a ambos lados de la ecuación."
+        },
+        {
+            "instruccion": "Resuelve: \\(2x + 9 = x + 15\\).",
+            "guia": "Pista: Resta \\(x\\) en ambos lados para agrupar variables a la izquierda."
+        },
+        {
+            "instruccion": "Resuelve: \\(7x - 5 = 3x + 11\\).",
+            "guia": "Pista: Agrupa las \\(x\\) del lado izquierdo y los enteros del lado derecho."
+        },
+        {
+            "instruccion": "Resuelve: \\(3(x + 2) = 18\\).",
+            "guia": "Pista: Multiplica primero el 3 por los términos dentro del paréntesis."
+        }
+    ],
+    "resumen": "Despejar una ecuación requiere aplicar sistemáticamente operaciones inversas en ambos miembros hasta aislar la incógnita.",
+    "bibliografia": [
+        "Baldor, A. (2007). Álgebra. Grupo Editorial Patria.",
+        "Sullivan, M. (2006). Álgebra y Trigonometría. Pearson Educación."
+    ]
+}

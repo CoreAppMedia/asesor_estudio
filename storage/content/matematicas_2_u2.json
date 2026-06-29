@@ -1,0 +1,107 @@
+{
+    "introduccion": "Una función cuadrática modela curvas llamadas parábolas. Veremos cómo analizar su comportamiento, identificar sus puntos de retorno (vértices) y resolver problemas prácticos.",
+    "objetivos": [
+        "Graficar funciones cuadráticas f(x) = ax^2 + bx + c.",
+        "Calcular el vértice y el eje de simetría.",
+        "Resolver problemas de optimización básica."
+    ],
+    "conocimientos_previos": [
+        "Ubicación de puntos en el plano cartesiano y operaciones algebraicas básicas."
+    ],
+    "explicacion": [
+        {
+            "titulo": "1. La gráfica de la parábola",
+            "texto": "La función cuadrática \\(f(x) = ax^2 + bx + c\\) tiene como gráfica una parábola. Si \\(a > 0\\) abre hacia arriba; si \\(a < 0\\) abre hacia abajo."
+        },
+        {
+            "titulo": "2. Coordenadas del Vértice",
+            "texto": "El vértice \\(V(h, k)\\) es el punto extremo. La coordenada horizontal es \\(h = -\\frac{b}{2a}\\) y la vertical es \\(k = f(h)\\)."
+        }
+    ],
+    "conceptos_clave": [
+        {
+            "concepto": "Vértice",
+            "definicion": "Punto donde la parábola cambia de dirección."
+        },
+        {
+            "concepto": "Concavidad",
+            "definicion": "Dirección de apertura de las ramas de la parábola (hacia arriba o abajo)."
+        }
+    ],
+    "ejemplos": [
+        {
+            "titulo": "Ejemplo 1.1: Concavidad Positiva",
+            "explicacion": "Determina la concavidad de la parábola \\(f(x) = 3x^2 - x\\).",
+            "solucion": "1. Identificamos \\(a = 3\\).\n2. Dado que \\(a > 0\\), la parábola abre hacia arriba (cóncava hacia arriba)."
+        },
+        {
+            "titulo": "Ejemplo 1.2: Concavidad Negativa",
+            "explicacion": "Determina la concavidad de \\(f(x) = -2x^2 + 5\\).",
+            "solucion": "1. Identificamos \\(a = -2\\).\n2. Dado que \\(a < 0\\), la parábola abre hacia abajo (cóncava hacia abajo)."
+        },
+        {
+            "titulo": "Ejemplo 2.1: Vértice de x^2 - 4x + 5",
+            "explicacion": "Encuentra el vértice de la función \\(f(x) = x^2 - 4x + 5\\).",
+            "solucion": "1. Calculamos \\(h = -\\frac{-4}{2(1)} = 2\\).\n2. Evaluamos \\(k = f(2) = (2)^2 - 4(2) + 5 = 4 - 8 + 5 = 1\\).\n3. El vértice es \\(V(2, 1)\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.2: Vértice con a negativa",
+            "explicacion": "Encuentra el vértice de \\(f(x) = -x^2 + 6x\\).",
+            "solucion": "1. Calculamos \\(h = -\\frac{6}{2(-1)} = 3\\).\n2. Evaluamos \\(k = f(3) = -(3)^2 + 6(3) = -9 + 18 = 9\\).\n3. El vértice es \\(V(3, 9)\\)."
+        }
+    ],
+    "errores_comunes": [
+        {
+            "error": "Olvidar evaluar h en la función para hallar k",
+            "ejemplo_incorrecto": "Decir que el vértice de \\(x^2 - 4x + 5\\) es simplemente el punto \\(x = 2\\).",
+            "correccion": "El vértice es un punto ordenado en el plano \\(V(h, k)\\), por lo que debemos calcular la coordenada \\(y\\) evaluando: \\(k = f(h)\\)."
+        }
+    ],
+    "ejercicios_guiados": [
+        {
+            "instruccion": "Determina hacia dónde abre la parábola \\(f(x) = -5x^2 + 2x + 1\\).",
+            "guia": "Pista: Observa el signo del coeficiente del término \\(x^2\\)."
+        },
+        {
+            "instruccion": "Indica si la parábola \\(f(x) = x^2 - 4\\) tiene un punto mínimo o máximo.",
+            "guia": "Pista: Si abre hacia arriba (a > 0), el vértice es un punto mínimo."
+        },
+        {
+            "instruccion": "Halla la concavidad de la parábola \\(f(x) = \\frac{1}{2}x^2\\).",
+            "guia": "Pista: El coeficiente es positivo (\\(1/2 > 0\\))."
+        },
+        {
+            "instruccion": "¿Cuál es el valor máximo o mínimo de la función \\(f(x) = (x-1)^2\\)?",
+            "guia": "Pista: Al expandirse, \\(a=1 > 0\\), por lo que tiene un mínimo."
+        },
+        {
+            "instruccion": "Determina el eje de simetría de \\(f(x) = x^2\\).",
+            "guia": "Pista: El eje de simetría es la recta vertical \\(x = h\\). Aquí \\(h = 0\\)."
+        },
+        {
+            "instruccion": "Calcula el vértice de \\(f(x) = x^2 - 2x + 3\\).",
+            "guia": "Pista: Usa la fórmula \\(h = -\\frac{b}{2a}\\) y luego evalúa la función."
+        },
+        {
+            "instruccion": "Calcula el vértice de \\(f(x) = -x^2 + 6x\\).",
+            "guia": "Pista: Identifica \\(a=-1\\) y \\(b=6\\)."
+        },
+        {
+            "instruccion": "Encuentra las coordenadas del vértice de \\(f(x) = 2x^2 - 8x + 5\\).",
+            "guia": "Pista: Sustituye \\(a=2\\) y \\(b=-8\\) en la fórmula de \\(h\\)."
+        },
+        {
+            "instruccion": "Calcula el vértice de \\(f(x) = x^2 + 4x - 1\\).",
+            "guia": "Pista: La coordenada horizontal es \\(h = -2\\). Evalúa \\(f(-2)\\)."
+        },
+        {
+            "instruccion": "Encuentra las coordenadas del vértice de \\(f(x) = -3x^2 + 12x - 10\\).",
+            "guia": "Pista: Aplica las fórmulas usuales con cuidado de los signos de los coeficientes."
+        }
+    ],
+    "resumen": "Las funciones cuadráticas representan curvas simétricas con un punto máximo o mínimo en su vértice.",
+    "bibliografia": [
+        "Swokowski, E. W., & Cole, J. A. (2011). Álgebra y Trigonometría con Geometría Analítica. Cengage Learning.",
+        "Sullivan, M. (2006). Álgebra y Trigonometría. Pearson Educación."
+    ]
+}

@@ -1,0 +1,107 @@
+{
+    "introduccion": "Los sistemas de ecuaciones lineales de 2x2 representan situaciones donde dos condiciones distintas dependen de dos variables desconocidas simultáneamente. Resolveremos estos sistemas mediante métodos algebraicos y gráficos.",
+    "objetivos": [
+        "Comprender la interpretación gráfica de un sistema 2x2.",
+        "Resolver sistemas 2x2 por sustitución, igualación y reducción.",
+        "Modelar problemas reales con dos incógnitas."
+    ],
+    "conocimientos_previos": [
+        "Despejes algebraicos básicos y graficación de líneas rectas."
+    ],
+    "explicacion": [
+        {
+            "titulo": "1. ¿Qué es un sistema 2x2?",
+            "texto": "Es un conjunto de dos ecuaciones con dos incógnitas. La solución es el par ordenado \\((x, y)\\) que satisface ambas simultáneamente."
+        },
+        {
+            "titulo": "2. Métodos de Resolución Algebraicos",
+            "texto": "Los métodos principales para resolver sistemas son la sustitución, la igualación y la reducción (suma y resta)."
+        }
+    ],
+    "conceptos_clave": [
+        {
+            "concepto": "Intersección",
+            "definicion": "Punto común en el plano donde se cruzan las rectas de las ecuaciones."
+        },
+        {
+            "concepto": "Reducción",
+            "definicion": "Método para eliminar una variable sumando o restando las ecuaciones multiplicadas por constantes."
+        }
+    ],
+    "ejemplos": [
+        {
+            "titulo": "Ejemplo 1.1: Comprobación de Solución",
+            "explicacion": "Verifica si \\((2, 3)\\) es solución del sistema: \\(x + y = 5\\) y \\(2x - y = 1\\).",
+            "solucion": "1. Primera ecuación: \\(2 + 3 = 5\\) (Sí cumple).\n2. Segunda ecuación: \\(2(2) - 3 = 4 - 3 = 1\\) (Sí cumple). Por lo tanto, \\((2, 3)\\) es solución."
+        },
+        {
+            "titulo": "Ejemplo 1.2: Interpretación Gráfica",
+            "explicacion": "Determina el punto de intersección de las rectas \\(y = x\\) e \\(y = -x + 2\\).",
+            "solucion": "1. Igualamos las ecuaciones: \\(x = -x + 2\\).\n2. Despejamos: \\(2x = 2 \\implies x = 1\\).\n3. Evaluamos para obtener \\(y\\): \\(y = 1\\). El punto de intersección es \\((1, 1)\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.1: Método de Sustitución",
+            "explicacion": "Resuelve por sustitución: \\(x + y = 4\\), \\(y = 2x - 1\\).",
+            "solucion": "1. Sustituimos \\(y\\) en la primera ecuación: \\(x + (2x - 1) = 4\\).\n2. Resolvemos: \\(3x - 1 = 4 \\implies 3x = 5 \\implies x = \\frac{5}{3}\\).\n3. Calculamos \\(y\\): \\(y = 2(\\frac{5}{3}) - 1 = \\frac{7}{3}\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.2: Método de Reducción",
+            "explicacion": "Resuelve por reducción: \\(x + y = 3\\), \\(x - y = 1\\).",
+            "solucion": "1. Sumamos las dos ecuaciones de forma directa: \\(2x = 4 \\implies x = 2\\).\n2. Sustituimos \\(x\\) en la primera ecuación: \\(2 + y = 3 \\implies y = 1\\)."
+        }
+    ],
+    "errores_comunes": [
+        {
+            "error": "No multiplicar todos los términos de una ecuación al buscar reducción",
+            "ejemplo_incorrecto": "Multiplicar \\(x + y = 3\\) por 2 y escribir \\(2x + 2y = 3\\).",
+            "correccion": "Se debe multiplicar también el término constante: \\(2x + 2y = 6\\)."
+        }
+    ],
+    "ejercicios_guiados": [
+        {
+            "instruccion": "Verifica si \\((1, 4)\\) es solución de \\(x + y = 5\\) e \\(y = 4x\\).",
+            "guia": "Pista: Sustituye \\(x=1\\) e \\(y=4\\) en ambas ecuaciones y comprueba."
+        },
+        {
+            "instruccion": "Si dos rectas en un sistema son paralelas, ¿cuántas soluciones tiene el sistema?",
+            "guia": "Pista: Las rectas paralelas nunca se cruzan, por lo que no hay puntos en común."
+        },
+        {
+            "instruccion": "¿Es \\((0, 2)\\) solución de \\(2x + 3y = 6\\) y \\(x - y = -2\\)?",
+            "guia": "Pista: Evalúa el punto en ambas ecuaciones y comprueba las igualdades."
+        },
+        {
+            "instruccion": "Identifica si el sistema \\(y=x\\) e \\(y=x+2\\) tiene solución.",
+            "guia": "Pista: Al tener la misma pendiente m=1 y diferente ordenada, son paralelas."
+        },
+        {
+            "instruccion": "Explica qué significa que un sistema tenga infinitas soluciones.",
+            "guia": "Pista: Ocurre cuando ambas ecuaciones representan gráficamente la misma recta."
+        },
+        {
+            "instruccion": "Resuelve por eliminación/reducción: \\(x + y = 5\\), \\(x - y = 1\\).",
+            "guia": "Pista: Suma las ecuaciones de forma directa para cancelar la variable \\(y\\)."
+        },
+        {
+            "instruccion": "Resuelve por sustitución: \\(y = 2x\\), \\(x + y = 9\\).",
+            "guia": "Pista: Sustituye la expresión \\(2x\\) en lugar de \\(y\\) en la segunda ecuación."
+        },
+        {
+            "instruccion": "Resuelve por reducción: \\(2x + y = 8\\), \\(3x - y = 7\\).",
+            "guia": "Pista: Suma verticalmente las ecuaciones para cancelar \\(y\\)."
+        },
+        {
+            "instruccion": "Resuelve por igualación: \\(y = 3x - 1\\), \\(y = x + 3\\).",
+            "guia": "Pista: Iguala los lados derechos de ambas ecuaciones: \\(3x - 1 = x + 3\\)."
+        },
+        {
+            "instruccion": "Resuelve: \\(x + 2y = 7\\), \\(x - y = 1\\).",
+            "guia": "Pista: Resta la segunda ecuación de la primera para cancelar \\(x\\)."
+        }
+    ],
+    "resumen": "Resolver sistemas 2x2 consiste en encontrar la intersección común entre dos condiciones lineales. Los métodos algebraicos simplifican este proceso de búsqueda.",
+    "bibliografia": [
+        "Baldor, A. (2007). Álgebra. Grupo Editorial Patria.",
+        "Swokowski, E. W., & Cole, J. A. (2011). Álgebra y Trigonometría con Geometría Analítica. Cengage Learning."
+    ]
+}

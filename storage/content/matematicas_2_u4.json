@@ -1,0 +1,140 @@
+{
+    "introduccion": "La congruencia y la semejanza estudian la igualdad y la proporción de formas en geometría. Además, estudiaremos el Teorema de Tales y el Teorema de Pitágoras.",
+    "objetivos": [
+        "Distinguir entre figuras congruentes y semejantes.",
+        "Aplicar criterios de semejanza de triángulos.",
+        "Utilizar los teoremas de Tales y Pitágoras."
+    ],
+    "conocimientos_previos": [
+        "Propiedades de triángulos y despejes básicos."
+    ],
+    "explicacion": [
+        {
+            "titulo": "1. Congruencia y Semejanza",
+            "texto": "Figuras congruentes son idénticas en tamaño y forma. Figuras semejantes tienen la misma forma pero sus tamaños son proporcionales."
+        },
+        {
+            "titulo": "2. Teorema de Tales",
+            "texto": "Si se traza una línea paralela a un lado de un triángulo, se forma otro triángulo semejante al original."
+        },
+        {
+            "titulo": "3. Teorema de Pitágoras",
+            "texto": "En todo triángulo rectángulo, el cuadrado de la hipotenusa es igual a la suma de los cuadrados de los catetos: \\(c^2 = a^2 + b^2\\)."
+        }
+    ],
+    "conceptos_clave": [
+        {
+            "concepto": "Hipotenusa",
+            "definicion": "El lado de mayor longitud, opuesto al ángulo de 90°."
+        },
+        {
+            "concepto": "Semejanza",
+            "definicion": "Proporcionalidad entre los lados homólogos de dos figuras con ángulos iguales."
+        }
+    ],
+    "ejemplos": [
+        {
+            "titulo": "Ejemplo 1.1: Identificar Semejanza",
+            "explicacion": "Un triángulo tiene lados 3, 4, 5 y otro tiene lados 6, 8, 10. ¿Son semejantes?",
+            "solucion": "1. Comparamos las razones de los lados correspondientes: \\(\\frac{6}{3} = 2\\), \\(\\frac{8}{4} = 2\\), \\(\\frac{10}{5} = 2\\).\n2. Al ser las razones iguales (razón de semejanza = 2), los triángulos son semejantes."
+        },
+        {
+            "titulo": "Ejemplo 1.2: Triángulos Congruentes",
+            "explicacion": "Dos triángulos tienen los tres lados iguales a 5 cm, 6 cm y 7 cm. ¿Son congruentes?",
+            "solucion": "1. Por el criterio Lado-Lado-Lado (LLL), al tener sus tres lados correspondientes iguales, son congruentes."
+        },
+        {
+            "titulo": "Ejemplo 2.1: Aplicar Teorema de Tales",
+            "explicacion": "Dado un triángulo con un segmento paralelo que divide los lados en segmentos \\(x\\) y 3 en un lado, y 4 y 2 en el otro. Halla \\(x\\).",
+            "solucion": "1. Planteamos la proporción de Tales: \\(\\frac{x}{3} = \\frac{4}{2}\\).\n2. Despejamos \\(x\\): \\(x = 3 \\times 2 = 6\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.2: Altura de un objeto",
+            "explicacion": "Un poste proyecta una sombra de 6 m. A la misma hora, un bastón de 1 m proyecta una sombra de 2 m. Halla la altura del poste.",
+            "solucion": "1. Por Tales, formamos la proporción: \\(\\frac{H}{1} = \\frac{6}{2}\\).\n2. Resolvemos: \\(H = 3\\text{ m}\\)."
+        },
+        {
+            "titulo": "Ejemplo 3.1: Hallar Hipotenusa",
+            "explicacion": "Calcula la hipotenusa de un triángulo rectángulo cuyos catetos miden 3 cm y 4 cm.",
+            "solucion": "1. Aplicamos Pitágoras: \\(c^2 = 3^2 + 4^2 = 9 + 16 = 25\\).\n2. Sacamos raíz cuadrada: \\(c = \\sqrt{25} = 5\\text{ cm}\\)."
+        },
+        {
+            "titulo": "Ejemplo 3.2: Hallar un Cateto",
+            "explicacion": "Encuentra el cateto faltante si la hipotenusa mide 13 cm y el otro cateto mide 5 cm.",
+            "solucion": "1. Despejamos el cateto: \\(b^2 = c^2 - a^2 = 13^2 - 5^2 = 169 - 25 = 144\\).\n2. Sacamos raíz cuadrada: \\(b = \\sqrt{144} = 12\\text{ cm}\\)."
+        }
+    ],
+    "errores_comunes": [
+        {
+            "error": "Usar el teorema de Pitágoras en triángulos oblicuángulos",
+            "ejemplo_incorrecto": "Aplicar \\(c^2 = a^2 + b^2\\) en un triángulo con ángulos de \\(60^\\circ\\).",
+            "correccion": "El Teorema de Pitágoras es de aplicación exclusiva para triángulos rectángulos (con un ángulo de 90°)."
+        }
+    ],
+    "ejercicios_guiados": [
+        {
+            "instruccion": "Explica el criterio Lado-Lado-Lado (LLL) de congruencia.",
+            "guia": "Pista: Establece que si los tres lados homólogos de dos triángulos miden lo mismo, los triángulos son idénticos."
+        },
+        {
+            "instruccion": "Si la razón de semejanza entre dos triángulos es 3, y el lado menor del primero mide 4 cm, ¿cuánto mide en el segundo?",
+            "guia": "Pista: Multiplica la longitud del lado menor por la razón de semejanza (3)."
+        },
+        {
+            "instruccion": "Identifica si todos los triángulos equiláteros son semejantes.",
+            "guia": "Pista: Sí, pues todos sus ángulos internos miden siempre 60° (criterio AA)."
+        },
+        {
+            "instruccion": "Si dos triángulos tienen la misma forma pero sus perímetros son diferentes, ¿son semejantes o congruentes?",
+            "guia": "Pista: Al cambiar la escala de tamaño pero mantener la forma, son semejantes."
+        },
+        {
+            "instruccion": "Escribe las condiciones para que dos polígonos sean congruentes.",
+            "guia": "Pista: Deben tener los mismos ángulos y la misma medida de lados correspondientes."
+        },
+        {
+            "instruccion": "Resuelve la proporción: \\(\\frac{x}{3} = \\frac{8}{4}\\).",
+            "guia": "Pista: Multiplica cruzado y despeja la variable \\(x\\)."
+        },
+        {
+            "instruccion": "Un árbol proyecta una sombra de 12 m. Una persona de 1.5 m de altura proyecta una sombra de 3 m. Halla la altura del árbol.",
+            "guia": "Pista: Plantea la relación \\(\\frac{\\text{Altura}}{1.5} = \\frac{12}{3}\\)."
+        },
+        {
+            "instruccion": "En un triángulo ABC, se traza una paralela a BC que corta los otros lados en D y E. Si AD=4, DB=2, AE=6, halla EC.",
+            "guia": "Pista: Plantea la proporción \\(\\frac{4}{2} = \\frac{6}{\\text{EC}}\\)."
+        },
+        {
+            "instruccion": "Si dos segmentos paralelos cortan dos rectas secantes y las dividen en proporciones, ¿qué teorema aplicamos?",
+            "guia": "Pista: Es el Teorema de Tales sobre proporcionalidad de segmentos."
+        },
+        {
+            "instruccion": "Determina la escala de un mapa si un segmento de 5 cm representa 15 km en la realidad.",
+            "guia": "Pista: Establece la proporción de semejanza dividiendo 15 km entre 5 cm."
+        },
+        {
+            "instruccion": "Calcula la hipotenusa si los catetos miden 6 cm y 8 cm.",
+            "guia": "Pista: Aplica \\(c = \\sqrt{6^2 + 8^2}\\)."
+        },
+        {
+            "instruccion": "Halla un cateto si la hipotenusa es 10 cm y el otro cateto es 6 cm.",
+            "guia": "Pista: Despeja el cateto mediante \\(a = \\sqrt{c^2 - b^2}\\)."
+        },
+        {
+            "instruccion": "Halla la diagonal de un rectángulo de lados 5 cm y 12 cm.",
+            "guia": "Pista: La diagonal es la hipotenusa de los triángulos rectángulos formados por los lados del rectángulo."
+        },
+        {
+            "instruccion": "Calcula la hipotenusa si los catetos son 5 cm y 12 cm.",
+            "guia": "Pista: Eleva al cuadrado ambos catetos, súmalos y extrae la raíz."
+        },
+        {
+            "instruccion": "Halla el cateto de un triángulo rectángulo si la hipotenusa es 5 y el otro cateto es 3.",
+            "guia": "Pista: Aplica la fórmula despejada de Pitágoras."
+        }
+    ],
+    "resumen": "Los criterios de congruencia y semejanza permiten relacionar las medidas de figuras geométricas. El Teorema de Tales y de Pitágoras son aplicaciones clave de estas relaciones.",
+    "bibliografia": [
+        "Baldor, A. (2004). Geometría y Trigonometría. Grupo Editorial Patria."
+    ]
+}

@@ -1,0 +1,107 @@
+{
+    "introduccion": "Las funciones trigonométricas analizan el comportamiento periódico. Utilizando el círculo unitario y radianes modelaremos ciclos recurrentes de la naturaleza.",
+    "objetivos": [
+        "Definir radianes y realizar conversiones.",
+        "Comprender el círculo unitario.",
+        "Graficar periodicidad en funciones seno y coseno."
+    ],
+    "conocimientos_previos": [
+        "Razones trigonométricas en triángulos rectángulos y geometría básica."
+    ],
+    "explicacion": [
+        {
+            "titulo": "1. Radianes y Círculo Unitario",
+            "texto": "La relación entre grados y radianes es \\(180^\\circ = \\pi\\text{ rad}\\). El círculo unitario posee radio \\(r = 1\\)."
+        },
+        {
+            "titulo": "2. Características de las ondas trigonométricas",
+            "texto": "Las funciones trigonométricas seno y coseno se repiten de forma cíclica con un período estándar de \\(2\\pi\\)."
+        }
+    ],
+    "conceptos_clave": [
+        {
+            "concepto": "Radián",
+            "definicion": "Unidad de medida de ángulos basada en la longitud del arco."
+        },
+        {
+            "concepto": "Período",
+            "definicion": "Intervalo en el cual se repite un ciclo de la función."
+        }
+    ],
+    "ejemplos": [
+        {
+            "titulo": "Ejemplo 1.1: Conversión a Radianes",
+            "explicacion": "Convierte \\(90^\\circ\\) a radianes.",
+            "solucion": "1. Multiplicamos por la fracción de conversión: \\(90^\\circ \\times \\frac{\\pi}{180^\\circ} = \\frac{90}{180}\\pi\\).\n2. Simplificamos: \\(\\frac{1}{2}\\pi\\text{ rad}\\)."
+        },
+        {
+            "titulo": "Ejemplo 1.2: Conversión a Grados",
+            "explicacion": "Convierte \\(\\pi\\text{ rad}\\) a grados.",
+            "solucion": "1. Sabemos por definición que \\(\\pi\\text{ rad} = 180^\\circ\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.1: Identificar Amplitud",
+            "explicacion": "Halla la amplitud de la función trigonométrica \\(y = 3\\text{sen}(x)\\).",
+            "solucion": "1. El coeficiente que acompaña a la función es 3.\n2. La amplitud es \\(|3| = 3\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.2: Período de la función",
+            "explicacion": "¿Cuál es el período básico de \\(y = \\cos(x)\\)?",
+            "solucion": "1. Las funciones trigonométricas básicas completan su recorrido en un círculo unitario.\n2. El período es \\(2\\pi\\)."
+        }
+    ],
+    "errores_comunes": [
+        {
+            "error": "Considerar el período de tangente como 2π",
+            "ejemplo_incorrecto": "Afirmar que la función tangente se repite cada 2π radianes.",
+            "correccion": "El período de la función tangente básica es \\(\\pi\\) radianes."
+        }
+    ],
+    "ejercicios_guiados": [
+        {
+            "instruccion": "Convierte \\(45^\\circ\\) a radianes.",
+            "guia": "Pista: Multiplica por el factor \\(\\frac{\\pi}{180^\\circ}\\) y simplifica la fracción."
+        },
+        {
+            "instruccion": "Convierte \\(\\frac{\\pi}{3}\\text{ rad}\\) a grados.",
+            "guia": "Pista: Sustituye el valor de \\(\\pi\\) por \\(180^\\circ\\)."
+        },
+        {
+            "instruccion": "¿Qué coordenadas tiene el ángulo de 0° en el círculo unitario?",
+            "guia": "Pista: Está sobre el eje x a la derecha, por lo que sus coordenadas son \\((1, 0)\\)."
+        },
+        {
+            "instruccion": "Determina el seno de 90° usando el círculo unitario.",
+            "guia": "Pista: El seno es la coordenada vertical en el punto \\((0, 1)\\), es decir, 1."
+        },
+        {
+            "instruccion": "Convierte \\(180^\\circ\\) a radianes.",
+            "guia": "Pista: Por definición, equivale directamente a \\(\\pi\\) radianes."
+        },
+        {
+            "instruccion": "Identifica la amplitud de \\(y = 5\\cos(x)\\).",
+            "guia": "Pista: La amplitud es el valor absoluto del coeficiente principal."
+        },
+        {
+            "instruccion": "Determina el período de la función \\(y = \\text{sen}(2x)\\).",
+            "guia": "Pista: El período se calcula mediante \\(T = \\frac{2\\pi}{B}\\). Aquí \\(B = 2\\)."
+        },
+        {
+            "instruccion": "Halla el valor máximo que puede tomar la función \\(y = \\cos(x)\\).",
+            "guia": "Pista: En el círculo unitario, la coordenada horizontal x máxima es 1."
+        },
+        {
+            "instruccion": "Halla el valor mínimo que puede tomar la función \\(y = \\text{sen}(x)\\).",
+            "guia": "Pista: El valor mínimo de la coordenada y es -1."
+        },
+        {
+            "instruccion": "Calcula la amplitud de \\(y = -2\\text{sen}(x)\\).",
+            "guia": "Pista: La amplitud es siempre una magnitud positiva, calcula el valor absoluto de -2."
+        }
+    ],
+    "resumen": "Las funciones trigonométricas describen movimientos cíclicos y de oscilación basados en las coordenadas del círculo unitario.",
+    "bibliografia": [
+        "Larson, R., & Falvo, D. (2011). Precálculo. Cengage Learning.",
+        "Stewart, J., Redlin, L., & Watson, S. (2012). Precálculo: Matemáticas para el cálculo. Cengage Learning."
+    ]
+}

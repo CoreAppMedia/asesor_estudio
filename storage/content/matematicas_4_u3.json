@@ -1,0 +1,107 @@
+{
+    "introduccion": "Las funciones exponenciales y logarítmicas modelan fenómenos de crecimiento acelerado y escala logarítmica. Comprenderemos sus propiedades inversas.",
+    "objetivos": [
+        "Graficar funciones exponenciales y logarítmicas.",
+        "Aplicar las propiedades de los logaritmos.",
+        "Resolver ecuaciones exponenciales y logarítmicas."
+    ],
+    "conocimientos_previos": [
+        "Leyes de exponentes y despejes básicos."
+    ],
+    "explicacion": [
+        {
+            "titulo": "1. Relación inversa y gráficas",
+            "texto": "La exponencial \\(f(x) = a^x\\) y la logarítmica \\(g(x) = \\log_a(x)\\) son funciones inversas y sus gráficas se reflejan respecto a \\(y = x\\)."
+        },
+        {
+            "titulo": "2. Propiedades de los logaritmos",
+            "texto": "Las propiedades principales son: producto: \\(\\log(uv) = \\log(u) + \\log(v)\\), cociente: \\(\\log(\\frac{u}{v}) = \\log(u) - \\log(v)\\) y potencia: \\(\\log(u^c) = c \\log(u)\\)."
+        }
+    ],
+    "conceptos_clave": [
+        {
+            "concepto": "Logaritmo",
+            "definicion": "Exponente al que se eleva la base para obtener un número."
+        },
+        {
+            "concepto": "Base e",
+            "definicion": "Base para el logaritmo natural (ln)."
+        }
+    ],
+    "ejemplos": [
+        {
+            "titulo": "Ejemplo 1.1: Conversión a Logaritmo",
+            "explicacion": "Expresa \\(2^3 = 8\\) en su forma logarítmica.",
+            "solucion": "1. La base es 2, el exponente es 3 y el resultado es 8.\n2. Forma logarítmica: \\(\\log_2(8) = 3\\)."
+        },
+        {
+            "titulo": "Ejemplo 1.2: Conversión a Exponencial",
+            "explicacion": "Expresa \\(\\log_3(9) = 2\\) en su forma exponencial.",
+            "solucion": "1. La base es 3, el exponente es 2 y el resultado es 9.\n2. Forma exponencial: \\(3^2 = 9\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.1: Desarrollar con propiedades",
+            "explicacion": "Desarrolla usando propiedades de logaritmos: \\(\\log(x^2 y)\\).",
+            "solucion": "1. Usamos la propiedad del producto: \\(\\log(x^2) + \\log(y)\\).\n2. Usamos la propiedad de la potencia: \\(2\\log(x) + \\log(y)\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.2: Simplificar con propiedades",
+            "explicacion": "Simplifica en un solo logaritmo: \\(\\log(12) - \\log(3)\\).",
+            "solucion": "1. Aplicamos la propiedad del cociente: \\(\\log(\\frac{12}{3})\\).\n2. Simplificamos la división: \\(\\log(4)\\)."
+        }
+    ],
+    "errores_comunes": [
+        {
+            "error": "Confundir el logaritmo de una suma con la suma de logaritmos",
+            "ejemplo_incorrecto": "Escribir \\(\\log(x + y) = \\log(x) + \\log(y)\\).",
+            "correccion": "No existe propiedad para la suma dentro de un logaritmo. La propiedad de suma aplica al producto: \\(\\log(x \\times y) = \\log(x) + \\log(y)\\)."
+        }
+    ],
+    "ejercicios_guiados": [
+        {
+            "instruccion": "Expresa \\(5^2 = 25\\) en forma logarítmica.",
+            "guia": "Pista: La base de la potencia es la base del logaritmo."
+        },
+        {
+            "instruccion": "Expresa \\(\\log_10(100) = 2\\) en forma exponencial.",
+            "guia": "Pista: La base elevada al resultado es igual al argumento."
+        },
+        {
+            "instruccion": "¿Cuál es el dominio de la función \\(f(x) = \\log(x)\\)?",
+            "guia": "Pista: Los logaritmos solo se definen para números reales estrictamente mayores a cero."
+        },
+        {
+            "instruccion": "Halla el valor de \\(\\log_2(16)\\).",
+            "guia": "Pista: Piensa a qué potencia debes elevar 2 para obtener 16."
+        },
+        {
+            "instruccion": "Calcula el valor de \\(\\ln(e)\\).",
+            "guia": "Pista: El logaritmo natural ln tiene base e. Cualquier logaritmo de su base es 1."
+        },
+        {
+            "instruccion": "Desarrolla: \\(\\log(ab^3)\\).",
+            "guia": "Pista: Aplica la propiedad del producto y luego la de la potencia."
+        },
+        {
+            "instruccion": "Simplifica en un solo término: \\(3\\log(x) - \\log(y)\\).",
+            "guia": "Pista: Sube el 3 como exponente y luego aplica la propiedad de la resta como división."
+        },
+        {
+            "instruccion": "Desarrolla: \\(\\log\\left(\\frac{x^2}{y}\\right)\\).",
+            "guia": "Pista: Aplica la propiedad del cociente y luego la de la potencia."
+        },
+        {
+            "instruccion": "Halla el valor de \\(\\log(5) + \\log(2)\\).",
+            "guia": "Pista: Agrúpalos multiplicando: \\(\\log(5 \\times 2) = \\log(10)\\)."
+        },
+        {
+            "instruccion": "Expresa como un solo término: \\(\\log(x) + 2\\log(y)\\).",
+            "guia": "Pista: Aplica la propiedad de potencia primero en el término de y."
+        }
+    ],
+    "resumen": "Las exponenciales y logaritmos son funciones inversas fundamentales para resolver ecuaciones donde las variables se encuentran en los exponentes.",
+    "bibliografia": [
+        "Larson, R., & Falvo, D. (2011). Precálculo. Cengage Learning.",
+        "Stewart, J., Redlin, L., & Watson, S. (2012). Precálculo: Matemáticas para el cálculo. Cengage Learning."
+    ]
+}

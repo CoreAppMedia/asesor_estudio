@@ -1,0 +1,141 @@
+{
+    "introduccion": "Las ecuaciones cuadráticas son de segundo grado y tienen la forma general \\(ax^2 + bx + c = 0\\). En esta unidad exploraremos cómo resolverlas utilizando técnicas de factorización y la fórmula general.",
+    "objetivos": [
+        "Resolver ecuaciones de segundo grado por factorización.",
+        "Utilizar la fórmula general para calcular raíces.",
+        "Interpretar el valor del discriminante."
+    ],
+    "conocimientos_previos": [
+        "Productos notables, leyes de exponentes y radicales."
+    ],
+    "explicacion": [
+        {
+            "titulo": "1. Métodos de factorización",
+            "texto": "Para resolver por factorización buscamos reescribir \\(x^2 + bx + c = 0\\) de la forma \\((x + p)(x + q) = 0\\)."
+        },
+        {
+            "titulo": "2. Fórmula General",
+            "texto": "Las soluciones para cualquier ecuación cuadrática se pueden calcular con: \\(x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\)."
+        },
+        {
+            "titulo": "3. El Discriminante",
+            "texto": "El discriminante \\(D = b^2 - 4ac\\) nos indica el número y tipo de soluciones que posee la ecuación."
+        }
+    ],
+    "conceptos_clave": [
+        {
+            "concepto": "Discriminante",
+            "definicion": "Expresión debajo de la raíz que determina el tipo de soluciones."
+        },
+        {
+            "concepto": "Raíz",
+            "definicion": "Valor que satisface la ecuación cuadrática."
+        }
+    ],
+    "ejemplos": [
+        {
+            "titulo": "Ejemplo 1.1: Trinomio de la forma x^2 + bx + c",
+            "explicacion": "Resuelve por factorización: \\(x^2 - 5x + 6 = 0\\).",
+            "solucion": "1. Buscamos dos números que multiplicados den 6 y sumados den -5. Estos son -2 y -3.\n2. Escribimos la ecuación como: \\((x - 2)(x - 3) = 0\\).\n3. Obtenemos las soluciones: \\(x_1 = 2\\) y \\(x_2 = 3\\)."
+        },
+        {
+            "titulo": "Ejemplo 1.2: Diferencia de Cuadrados",
+            "explicacion": "Resuelve por factorización: \\(x^2 - 9 = 0\\).",
+            "solucion": "1. Factorizamos la diferencia de cuadrados: \\((x - 3)(x + 3) = 0\\).\n2. Las raíces son \\(x_1 = 3\\) y \\(x_2 = -3\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.1: Fórmula general con dos soluciones reales",
+            "explicacion": "Resuelve: \\(x^2 - 3x + 2 = 0\\).",
+            "solucion": "1. Identificamos: \\(a=1, b=-3, c=2\\).\n2. Aplicamos la fórmula: \\(x = \\frac{-(-3) \\pm \\sqrt{(-3)^2 - 4(1)(2)}}{2(1)} = \\frac{3 \\pm \\sqrt{9 - 8}}{2} = \\frac{3 \\pm 1}{2}\\).\n3. Soluciones: \\(x_1 = 2\\), \\(x_2 = 1\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.2: Raíz doble",
+            "explicacion": "Resuelve: \\(x^2 + 4x + 4 = 0\\).",
+            "solucion": "1. Identificamos: \\(a=1, b=4, c=4\\).\n2. Aplicamos la fórmula: \\(x = \\frac{-4 \\pm \\sqrt{16 - 16}}{2} = \\frac{-4}{2} = -2\\). La única solución es \\(x = -2\\)."
+        },
+        {
+            "titulo": "Ejemplo 3.1: Discriminante Positivo",
+            "explicacion": "Determina el tipo de soluciones para \\(x^2 - 4x + 3 = 0\\) usando el discriminante.",
+            "solucion": "1. Calculamos \\(D = (-4)^2 - 4(1)(3) = 16 - 12 = 4\\).\n2. Al ser \\(D > 0\\), posee dos soluciones reales y distintas."
+        },
+        {
+            "titulo": "Ejemplo 3.2: Discriminante Negativo",
+            "explicacion": "Determina el tipo de soluciones para \\(x^2 + 2x + 5 = 0\\).",
+            "solucion": "1. Calculamos \\(D = (2)^2 - 4(1)(5) = 4 - 20 = -16\\).\n2. Al ser \\(D < 0\\), no posee soluciones reales."
+        }
+    ],
+    "errores_comunes": [
+        {
+            "error": "Signo incorrecto al aplicar -b en la fórmula general",
+            "ejemplo_incorrecto": "Para \\(x^2 - 5x + 6 = 0\\), escribir \\(x = \\frac{-5 \\pm \\sqrt{25 - 24}}{2}\\).",
+            "correccion": "Si \\(b = -5\\), entonces \\(-b = -(-5) = 5\\). El valor correcto es positivo al inicio de la fórmula."
+        }
+    ],
+    "ejercicios_guiados": [
+        {
+            "instruccion": "Resuelve por factorización: \\(x^2 - 6x + 8 = 0\\).",
+            "guia": "Pista: Busca dos números que multiplicados den 8 y sumados den -4 y -2."
+        },
+        {
+            "instruccion": "Resuelve por factorización: \\(x^2 + 5x + 6 = 0\\).",
+            "guia": "Pista: Los números multiplicados deben dar +6 y sumados +5."
+        },
+        {
+            "instruccion": "Resuelve: \\(x^2 - 4 = 0\\) mediante factorización.",
+            "guia": "Pista: Es una diferencia de cuadrados perfectos: \\((x - 2)(x + 2) = 0\\)."
+        },
+        {
+            "instruccion": "Factoriza y resuelve: \\(x^2 - 2x - 3 = 0\\).",
+            "guia": "Pista: Busca números que multiplicados den -3 y cuya resta o suma sea -2."
+        },
+        {
+            "instruccion": "Resuelve por factor común: \\(x^2 + 4x = 0\\).",
+            "guia": "Pista: Extrae la \\(x\\) como factor común: \\(x(x + 4) = 0\\)."
+        },
+        {
+            "instruccion": "Resuelve con la fórmula general: \\(x^2 - 5x + 4 = 0\\).",
+            "guia": "Pista: Identifica \\(a=1, b=-5, c=4\\) y sustituye en la fórmula."
+        },
+        {
+            "instruccion": "Resuelve con la fórmula general: \\(x^2 + 2x - 8 = 0\\).",
+            "guia": "Pista: Ten cuidado con el término \\(-4ac\\) ya que \\(c\\) es negativo (-8)."
+        },
+        {
+            "instruccion": "Resuelve con la fórmula general: \\(x^2 - 6x + 9 = 0\\).",
+            "guia": "Pista: El radicando será cero, lo que indica que posee una solución única."
+        },
+        {
+            "instruccion": "Resuelve con la fórmula general: \\(2x^2 - 5x + 3 = 0\\).",
+            "guia": "Pista: Sustituye utilizando \\(a=2\\) en el denominador y coeficiente."
+        },
+        {
+            "instruccion": "Resuelve con la fórmula general: \\(x^2 - x - 2 = 0\\).",
+            "guia": "Pista: Utiliza los valores \\(a=1, b=-1, c=-2\\)."
+        },
+        {
+            "instruccion": "Calcula el discriminante de \\(x^2 - 5x + 6 = 0\\).",
+            "guia": "Pista: Aplica la fórmula \\(D = b^2 - 4ac\\)."
+        },
+        {
+            "instruccion": "Calcula el discriminante de \\(x^2 + 2x + 5 = 0\\).",
+            "guia": "Pista: Determina si el resultado es mayor, menor o igual a cero."
+        },
+        {
+            "instruccion": "Determina la naturaleza de las raíces para \\(x^2 - 6x + 9 = 0\\) usando el discriminante.",
+            "guia": "Pista: Si \\(D = 0\\), las raíces son reales e iguales."
+        },
+        {
+            "instruccion": "Calcula el discriminante de \\(2x^2 + x - 1 = 0\\).",
+            "guia": "Pista: Identifica bien los valores: \\(a=2, b=1, c=-1\\)."
+        },
+        {
+            "instruccion": "Determina cuántas soluciones reales tiene la ecuación \\(3x^2 + 2x + 1 = 0\\).",
+            "guia": "Pista: Si el discriminante es negativo, no tiene soluciones reales."
+        }
+    ],
+    "resumen": "Las ecuaciones de segundo grado tienen dos soluciones posibles que se pueden obtener mediante factorización o usando la fórmula general. El discriminante define el tipo de raíces.",
+    "bibliografia": [
+        "Baldor, A. (2007). Álgebra. Grupo Editorial Patria.",
+        "Sullivan, M. (2006). Álgebra y Trigonometría. Pearson Educación."
+    ]
+}

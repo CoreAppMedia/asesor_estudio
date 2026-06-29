@@ -1,0 +1,107 @@
+{
+    "introduccion": "La circunferencia y la elipse son cónicas cerradas fundamentales. Analizaremos sus ecuaciones ordinarias y generales, comprendiendo sus elementos característicos.",
+    "objetivos": [
+        "Deducir la ecuación de la circunferencia.",
+        "Identificar los elementos de la elipse.",
+        "Transformar ecuaciones completando cuadrados."
+    ],
+    "conocimientos_previos": [
+        "Fórmula de distancia, factorización y completar cuadrados."
+    ],
+    "explicacion": [
+        {
+            "titulo": "1. La Circunferencia",
+            "texto": "La circunferencia es el conjunto de puntos que equidistan de un centro \\(C(h, k)\\) un radio \\(r\\). Ecuación: \\((x - h)^2 + (y - k)^2 = r^2\\)."
+        },
+        {
+            "titulo": "2. La Elipse",
+            "texto": "La elipse es el lugar geométrico donde la suma de distancias a dos focos es constante. Ecuación ordinaria horizontal: \\(\\frac{(x-h)^2}{a^2} + \\frac{(y-k)^2}{b^2} = 1\\)."
+        }
+    ],
+    "conceptos_clave": [
+        {
+            "concepto": "Excentricidad",
+            "definicion": "Medida del achatamiento de la elipse (e = c/a)."
+        },
+        {
+            "concepto": "Semieje mayor",
+            "definicion": "Distancia del centro al vértice de mayor extensión (a)."
+        }
+    ],
+    "ejemplos": [
+        {
+            "titulo": "Ejemplo 1.1: Circunferencia en el origen",
+            "explicacion": "Halla la ecuación de la circunferencia con centro \\(C(0, 0)\\) y radio \\(r = 4\\).",
+            "solucion": "1. Usamos la forma estándar: \\(x^2 + y^2 = r^2\\).\n2. Sustituimos \\(r=4\\): \\(x^2 + y^2 = 16\\)."
+        },
+        {
+            "titulo": "Ejemplo 1.2: Circunferencia fuera del origen",
+            "explicacion": "Halla la ecuación ordinaria con centro \\(C(2, -3)\\) y radio \\(r = 5\\).",
+            "solucion": "1. Usamos la forma ordinaria: \\((x - h)^2 + (y - k)^2 = r^2\\).\n2. Sustituimos: \\((x - 2)^2 + (y - (-3))^2 = 5^2 \\implies (x - 2)^2 + (y + 3)^2 = 25\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.1: Elipse Horizontal del origen",
+            "explicacion": "Identifica los semiejes de la elipse \\(\\frac{x^2}{25} + \\frac{y^2}{9} = 1\\).",
+            "solucion": "1. Comparamos denominadores: el mayor es \\(a^2 = 25\\) y el menor \\(b^2 = 9\\).\n2. Obtenemos \\(a = 5\\) (semieje mayor) y \\(b = 3\\) (semieje menor)."
+        },
+        {
+            "titulo": "Ejemplo 2.2: Distancia Focal de la Elipse",
+            "explicacion": "Calcula la distancia focal \\(c\\) si la elipse tiene \\(a=5\\) y \\(b=4\\).",
+            "solucion": "1. Aplicamos la relación: \\(c^2 = a^2 - b^2 = 25 - 16 = 9\\).\n2. Obtenemos \\(c = \\sqrt{9} = 3\\)."
+        }
+    ],
+    "errores_comunes": [
+        {
+            "error": "Considerar el término r² como el radio directo de la circunferencia",
+            "ejemplo_incorrecto": "Afirmar que la circunferencia \\((x - 1)^2 + (y - 2)^2 = 9\\) tiene un radio de 9.",
+            "correccion": "El miembro derecho representa \\(r^2\\). El radio es la raíz cuadrada: \\(r = \\sqrt{9} = 3\\)."
+        }
+    ],
+    "ejercicios_guiados": [
+        {
+            "instruccion": "Halla la ecuación de la circunferencia con centro en \\((0, 0)\\) y radio \\(r = 3\\).",
+            "guia": "Pista: Sustituye el valor del radio al cuadrado."
+        },
+        {
+            "instruccion": "Halla la ecuación ordinaria si \\(C(1, 2)\\) y \\(r = 2\\).",
+            "guia": "Pista: Aplica la ecuación ordinaria con \\(h=1\\), \\(k=2\\) y \\(r=2\\)."
+        },
+        {
+            "instruccion": "Determina el centro y el radio de la circunferencia \\(x^2 + y^2 = 49\\).",
+            "guia": "Pista: El centro es el origen y el radio es la raíz cuadrada de 49."
+        },
+        {
+            "instruccion": "Determina el centro de la circunferencia \\((x - 5)^2 + (y + 1)^2 = 16\\).",
+            "guia": "Pista: Cambia los signos de las coordenadas en los binomios."
+        },
+        {
+            "instruccion": "Halla el radio de la circunferencia con ecuación \\(x^2 + y^2 - 100 = 0\\).",
+            "guia": "Pista: Despeja el término constante para obtener \\(r^2 = 100\\)."
+        },
+        {
+            "instruccion": "Halla la longitud del semieje mayor de \\(\\frac{x^2}{16} + \\frac{y^2}{4} = 1\\).",
+            "guia": "Pista: El semieje mayor \\(a\\) es la raíz del denominador más grande."
+        },
+        {
+            "instruccion": "Halla el semieje menor de \\(\\frac{x^2}{36} + \\frac{y^2}{25} = 1\\).",
+            "guia": "Pista: El semieje menor \\(b\\) es la raíz del denominador menor."
+        },
+        {
+            "instruccion": "Calcula la distancia focal \\(c\\) si \\(a=10\\) y \\(b=6\\).",
+            "guia": "Pista: Aplica \\(c = \\sqrt{a^2 - b^2}\\)."
+        },
+        {
+            "instruccion": "Determina la excentricidad de la elipse con \\(a=5\\) y \\(c=3\\).",
+            "guia": "Pista: Aplica la fórmula \\(e = \\frac{c}{a}\\)."
+        },
+        {
+            "instruccion": "Encuentra los vértices sobre el eje mayor para la elipse \\(\\frac{x^2}{9} + \\frac{y^2}{4} = 1\\).",
+            "guia": "Pista: Al ser horizontal, los vértices están en \\((\\pm a, 0)\\) con \\(a=3\\)."
+        }
+    ],
+    "resumen": "La circunferencia es una cónica con excentricidad cero. La elipse posee dos focos y su geometría depende de sus semiejes.",
+    "bibliografia": [
+        "Kindle, J. H. (1993). Geometría Analítica (Serie Schaum). McGraw-Hill.",
+        "Swokowski, E. W., & Cole, J. A. (2011). Álgebra y Trigonometría con Geometría Analítica. Cengage Learning."
+    ]
+}

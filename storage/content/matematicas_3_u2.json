@@ -1,0 +1,107 @@
+{
+    "introduccion": "La geometría analítica une el álgebra y la geometría mediante el plano cartesiano. Aprenderemos a ubicar coordenadas y calcular distancias e inclinaciones.",
+    "objetivos": [
+        "Ubicar puntos coordenados.",
+        "Aplicar la fórmula de distancia entre dos puntos.",
+        "Definir la pendiente y el ángulo de inclinación."
+    ],
+    "conocimientos_previos": [
+        "Plano cartesiano, variables y Teorema de Pitágoras."
+    ],
+    "explicacion": [
+        {
+            "titulo": "1. Distancia entre dos puntos",
+            "texto": "La distancia entre \\(P_1(x_1, y_1)\\) y \\(P_2(x_2, y_2)\\) se calcula mediante: \\(d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\\)."
+        },
+        {
+            "titulo": "2. Pendiente y ángulo de inclinación",
+            "texto": "La pendiente \\(m\\) de la recta es \\(m = \\frac{y_2 - y_1}{x_2 - x_1}\\), y su ángulo satisface \\(\\theta = \\arctan(m)\\)."
+        }
+    ],
+    "conceptos_clave": [
+        {
+            "concepto": "Distancia",
+            "definicion": "La longitud del segmento de recta que une dos puntos."
+        },
+        {
+            "concepto": "Ángulo",
+            "definicion": "Inclinación de la recta respecto al eje x positivo."
+        }
+    ],
+    "ejemplos": [
+        {
+            "titulo": "Ejemplo 1.1: Distancia Básica",
+            "explicacion": "Calcula la distancia entre \\(A(1, 2)\\) y \\(B(4, 6)\\).",
+            "solucion": "1. Restamos coordenadas: \\(x_2 - x_1 = 3\\) e \\(y_2 - y_1 = 4\\).\n2. Elevamos al cuadrado y sumamos: \\(3^2 + 4^2 = 9 + 16 = 25\\).\n3. Extraemos la raíz: \\(d = \\sqrt{25} = 5\\)."
+        },
+        {
+            "titulo": "Ejemplo 1.2: Distancia con Negativos",
+            "explicacion": "Halla la distancia de \\(C(-2, 3)\\) a \\(D(1, -1)\\).",
+            "solucion": "1. \\(\\Delta x = 1 - (-2) = 3\\).\n2. \\(\\Delta y = -1 - 3 = -4\\).\n3. Calculamos: \\(d = \\sqrt{3^2 + (-4)^2} = \\sqrt{9 + 16} = 5\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.1: Calcular Pendiente",
+            "explicacion": "Encuentra la pendiente de la recta que pasa por \\((1, 3)\\) y \\((3, 9)\\).",
+            "solucion": "1. Aplicamos la fórmula: \\(m = \\frac{9 - 3}{3 - 1} = \\frac{6}{2} = 3\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.2: Ángulo de Inclinación",
+            "explicacion": "Halla el ángulo de inclinación si la pendiente es \\(m = 1\\).",
+            "solucion": "1. Aplicamos \\(\\theta = \\arctan(1)\\).\n2. Obtenemos \\(\\theta = 45^\\circ\\)."
+        }
+    ],
+    "errores_comunes": [
+        {
+            "error": "Signo incorrecto al restar coordenadas de signo negativo",
+            "ejemplo_incorrecto": "Restar \\(3 - (-2)\\) como \\(3 - 2 = 1\\).",
+            "correccion": "La resta de un número negativo se convierte en suma: \\(3 - (-2) = 3 + 2 = 5\\)."
+        }
+    ],
+    "ejercicios_guiados": [
+        {
+            "instruccion": "Halla la distancia entre \\((0, 0)\\) y \\((3, 4)\\).",
+            "guia": "Pista: Aplica la fórmula de distancia simplificada desde el origen."
+        },
+        {
+            "instruccion": "Calcula la distancia entre \\((-1, -1)\\) y \\((2, 3)\\).",
+            "guia": "Pista: Realiza la diferencia de coordenadas teniendo cuidado con los signos negativos."
+        },
+        {
+            "instruccion": "Halla la distancia entre \\((2, 5)\\) y \\((8, 5)\\).",
+            "guia": "Pista: Al ser horizontal, la distancia es simplemente la diferencia absoluta de las coordenadas en x."
+        },
+        {
+            "instruccion": "Calcula la distancia entre \\((3, 2)\\) y \\((3, -4)\\).",
+            "guia": "Pista: Al ser vertical, calcula la diferencia absoluta de las coordenadas en y."
+        },
+        {
+            "instruccion": "Determina el valor de la distancia entre \\((1, -2)\\) y \\((4, 2)\\).",
+            "guia": "Pista: Aplica la fórmula de la raíz cuadrada de la suma de diferencias al cuadrado."
+        },
+        {
+            "instruccion": "Calcula la pendiente entre \\((2, 4)\\) y \\((4, 10)\\).",
+            "guia": "Pista: Resta las coordenadas correspondientes en la fórmula de la pendiente."
+        },
+        {
+            "instruccion": "Calcula el ángulo de inclinación si la pendiente mide 0.",
+            "guia": "Pista: El ángulo cuya tangente es 0 mide 0° (línea horizontal)."
+        },
+        {
+            "instruccion": "Halla la pendiente que pasa por \\((1, 5)\\) y \\((3, 1)\\).",
+            "guia": "Pista: El resultado de la división será una pendiente negativa."
+        },
+        {
+            "instruccion": "Determina el ángulo de inclinación si \\(m = \\sqrt{3}\\).",
+            "guia": "Pista: El ángulo cuya tangente es \\(\\sqrt{3}\\) es 60°."
+        },
+        {
+            "instruccion": "Calcula la pendiente si la recta une \\((2, -3)\\) y \\((5, 3)\\).",
+            "guia": "Pista: Aplica la fórmula estándar de la pendiente."
+        }
+    ],
+    "resumen": "La geometría analítica estudia las figuras en el plano mediante sus coordenadas, fundamentándose en conceptos de distancia, punto medio y pendiente.",
+    "bibliografia": [
+        "Kindle, J. H. (1993). Geometría Analítica (Serie Schaum). McGraw-Hill.",
+        "Swokowski, E. W., & Cole, J. A. (2011). Álgebra y Trigonometría con Geometría Analítica. Cengage Learning."
+    ]
+}

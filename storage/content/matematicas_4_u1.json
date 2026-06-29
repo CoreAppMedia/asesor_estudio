@@ -1,0 +1,107 @@
+{
+    "introduccion": "Las funciones polinomiales extienden el concepto de funciones a exponentes mayores. Analizaremos dominio, rango, operaciones algebraicas y cálculo de raíces.",
+    "objetivos": [
+        "Determinar dominio y rango.",
+        "Realizar operaciones con funciones.",
+        "Encontrar raíces mediante división sintética."
+    ],
+    "conocimientos_previos": [
+        "Concepto de función, dominio y factorización."
+    ],
+    "explicacion": [
+        {
+            "titulo": "1. Comportamiento y propiedades",
+            "texto": "Una función polinomial de grado \\(n\\) tiene como dominio todos los números reales \\(\\mathbb{R}\\)."
+        },
+        {
+            "titulo": "2. División sintética y Teorema del Residuo",
+            "texto": "La división sintética facilita la división de un polinomio entre \\(x - c\\). El Teorema del Residuo establece que el residuo de dividir \\(P(x)\\) entre \\(x - c\\) es \\(P(c)\\)."
+        }
+    ],
+    "conceptos_clave": [
+        {
+            "concepto": "Raíz",
+            "definicion": "Valor donde la función se anula (f(c) = 0)."
+        },
+        {
+            "concepto": "Grado",
+            "definicion": "El mayor exponente de la variable en el polinomio."
+        }
+    ],
+    "ejemplos": [
+        {
+            "titulo": "Ejemplo 1.1: Dominio de un Polinomio",
+            "explicacion": "Determina el dominio de la función \\(f(x) = x^3 - 2x + 1\\).",
+            "solucion": "1. Las funciones polinomiales no poseen restricciones como divisiones por cero o raíces negativas.\n2. Su dominio son todos los reales: \\(D_f = \\mathbb{R}\\)."
+        },
+        {
+            "titulo": "Ejemplo 1.2: Grado del Polinomio",
+            "explicacion": "Identifica el grado de la función \\(g(x) = 5x^4 - x^2 + 2\\).",
+            "solucion": "1. El término con el mayor exponente es \\(5x^4\\).\n2. Por lo tanto, la función es de grado 4."
+        },
+        {
+            "titulo": "Ejemplo 2.1: Teorema del Residuo",
+            "explicacion": "Calcula el residuo de dividir \\(P(x) = x^2 + 3x - 4\\) entre \\(x - 2\\).",
+            "solucion": "1. Evaluamos \\(P(2) = 2^2 + 3(2) - 4 = 4 + 6 - 4 = 6\\).\n2. El residuo de la división es 6."
+        },
+        {
+            "titulo": "Ejemplo 2.2: Teorema del Factor",
+            "explicacion": "Determina si \\(x - 1\\) es un factor de \\(P(x) = x^2 - 1\\).",
+            "solucion": "1. Evaluamos \\(P(1) = 1^2 - 1 = 0\\).\n2. Al ser el residuo cero, \\(x - 1\\) sí es un factor."
+        }
+    ],
+    "errores_comunes": [
+        {
+            "error": "Considerar restricciones en el dominio de funciones polinomiales",
+            "ejemplo_incorrecto": "Decir que el dominio de \\(f(x) = x^2 - 4\\) excluye a 2 y -2.",
+            "correccion": "Las raíces son donde la función se hace cero, no restricciones de dominio. El dominio de cualquier polinomio son todos los reales."
+        }
+    ],
+    "ejercicios_guiados": [
+        {
+            "instruccion": "Halla el dominio de la función \\(f(x) = -x^4 + 2x^2\\).",
+            "guia": "Pista: Es una función polinomial, no contiene restricciones reales."
+        },
+        {
+            "instruccion": "Identifica el grado de \\(f(x) = x^5 - 3x^2 + 4\\).",
+            "guia": "Pista: Identifica el exponente más alto de la variable."
+        },
+        {
+            "instruccion": "Determina el comportamiento de \\(f(x) = x^3\\) cuando x tiende a infinito positivo.",
+            "guia": "Pista: Si elevas números positivos muy grandes al cubo, obtienes valores positivos infinitos."
+        },
+        {
+            "instruccion": "Halla el término independiente de la función \\(f(x) = x^2 - 5x + 6\\).",
+            "guia": "Pista: Es el término numérico constante que no posee variable."
+        },
+        {
+            "instruccion": "Calcula el dominio de \\(f(x) = 2x + 10\\).",
+            "guia": "Pista: Las funciones lineales de grado 1 tienen dominio real."
+        },
+        {
+            "instruccion": "Calcula el residuo de dividir \\(x^2 - 5x + 6\\) entre \\(x - 3\\).",
+            "guia": "Pista: Evalúa el polinomio en \\(x = 3\\)."
+        },
+        {
+            "instruccion": "Verifica si \\(x - 2\\) es factor de \\(x^2 - 4\\).",
+            "guia": "Pista: Evalúa en \\(x = 2\\) y verifica si da 0."
+        },
+        {
+            "instruccion": "Calcula el residuo de dividir \\(x^3 - 1\\) entre \\(x - 1\\).",
+            "guia": "Pista: Aplica el Teorema del Residuo sustituyendo \\(x=1\\)."
+        },
+        {
+            "instruccion": "Determina si 1 es raíz de \\(x^2 + 2x - 3\\).",
+            "guia": "Pista: Comprueba si \\(P(1) = 0\\)."
+        },
+        {
+            "instruccion": "Usa el teorema del factor para ver si \\(x + 1\\) divide a \\(x^2 + 1\\).",
+            "guia": "Pista: Evalúa el polinomio en \\(x = -1\\). Al dar 2, no es factor."
+        }
+    ],
+    "resumen": "Las funciones polinomiales son suaves y continuas con dominio real. La división sintética ayuda a encontrar sus raíces algebraicas.",
+    "bibliografia": [
+        "Larson, R., & Falvo, D. (2011). Precálculo. Cengage Learning.",
+        "Stewart, J., Redlin, L., & Watson, S. (2012). Precálculo: Matemáticas para el cálculo. Cengage Learning."
+    ]
+}

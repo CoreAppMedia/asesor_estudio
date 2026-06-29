@@ -1,0 +1,107 @@
+{
+    "introduccion": "La recta es el lugar geométrico más sencillo en el plano cartesiano. Deduciremos sus diferentes formas de ecuación y analizaremos el paralelismo y la perpendicularidad.",
+    "objetivos": [
+        "Obtener la ecuación de una recta.",
+        "Transformar entre formas ordinaria y general.",
+        "Identificar paralelismo y perpendicularidad."
+    ],
+    "conocimientos_previos": [
+        "Cálculo de la pendiente entre dos puntos y despejes básicos."
+    ],
+    "explicacion": [
+        {
+            "titulo": "1. Formas de la ecuación de la recta",
+            "texto": "La recta se expresa de forma punto-pendiente: \\(y - y_1 = m(x - x_1)\\), ordinaria: \\(y = mx + b\\) o general: \\(Ax + By + C = 0\\)."
+        },
+        {
+            "titulo": "2. Paralelismo y Perpendicularidad",
+            "texto": "Dos rectas son paralelas si sus pendientes son iguales (\\(m_1 = m_2\\)). Son perpendiculares si sus pendientes son recíprocas y opuestas (\\(m_1 \\times m_2 = -1\\))."
+        }
+    ],
+    "conceptos_clave": [
+        {
+            "concepto": "Forma General",
+            "definicion": "Ecuación lineal igualada a cero (Ax + By + C = 0)."
+        },
+        {
+            "concepto": "Perpendiculares",
+            "definicion": "Líneas rectas que forman un ángulo recto al cruzarse."
+        }
+    ],
+    "ejemplos": [
+        {
+            "titulo": "Ejemplo 1.1: Ecuación Punto-Pendiente",
+            "explicacion": "Halla la ecuación ordinaria de la recta con pendiente \\(m = 2\\) que pasa por \\(P(1, 3)\\).",
+            "solucion": "1. Usamos punto-pendiente: \\(y - 3 = 2(x - 1)\\).\n2. Expandimos: \\(y - 3 = 2x - 2\\).\n3. Despejamos: \\(y = 2x + 1\\)."
+        },
+        {
+            "titulo": "Ejemplo 1.2: Ecuación General",
+            "explicacion": "Convierte la recta \\(y = -3x + 4\\) a la forma general.",
+            "solucion": "1. Pasamos todos los términos al miembro izquierdo: \\(3x + y - 4 = 0\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.1: Recta Paralela",
+            "explicacion": "Halla la pendiente de una recta paralela a \\(y = 5x - 2\\).",
+            "solucion": "1. La pendiente dada es \\(m_1 = 5\\).\n2. Como son paralelas, la pendiente buscada es también \\(m_2 = 5\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.2: Recta Perpendicular",
+            "explicacion": "Halla la pendiente de una recta perpendicular a \\(y = 2x + 1\\).",
+            "solucion": "1. La pendiente original es \\(m_1 = 2\\).\n2. La pendiente perpendicular es \\(m_2 = -\\frac{1}{m_1} = -\\frac{1}{2} = -0.5\\)."
+        }
+    ],
+    "errores_comunes": [
+        {
+            "error": "Considerar paralelas con pendiente inversa",
+            "ejemplo_incorrecto": "Decir que la paralela de \\(y = 3x\\) tiene pendiente \\(m = 1/3\\).",
+            "correccion": "Rectas paralelas tienen exactamente la misma pendiente: \\(m_2 = 3\\)."
+        }
+    ],
+    "ejercicios_guiados": [
+        {
+            "instruccion": "Halla la ecuación ordinaria si \\(m=3\\) y pasa por \\((0, 5)\\).",
+            "guia": "Pista: La ordenada al origen es \\(b=5\\), sustituye en \\(y = mx + b\\)."
+        },
+        {
+            "instruccion": "Convierte \\(y = 2x - 5\\) a su forma general.",
+            "guia": "Pista: Iguala a cero pasando todos los términos a un lado."
+        },
+        {
+            "instruccion": "Halla la ecuación punto-pendiente si pasa por \\((2, 4)\\) con \\(m=-1\\).",
+            "guia": "Pista: Sustituye directamente en \\(y - y_1 = m(x - x_1)\\)."
+        },
+        {
+            "instruccion": "Obtén la pendiente de la recta con ecuación general \\(3x - y + 2 = 0\\).",
+            "guia": "Pista: Despeja la variable \\(y\\) para llevarla a la forma ordinaria."
+        },
+        {
+            "instruccion": "Determina la ecuación general de la recta que pasa por \\((1, 2)\\) y \\((3, 6)\\).",
+            "guia": "Pista: Halla primero la pendiente y aplica la forma punto-pendiente."
+        },
+        {
+            "instruccion": "Identifica si \\(y = 2x + 1\\) e \\(y = 2x - 3\\) son paralelas.",
+            "guia": "Pista: Compara el valor de sus pendientes \\(m\\)."
+        },
+        {
+            "instruccion": "Determina la pendiente perpendicular a una recta con \\(m = -3\\).",
+            "guia": "Pista: Aplica la relación recíproca y opuesta: \\(m_2 = -\\frac{1}{m_1}\\)."
+        },
+        {
+            "instruccion": "Halla la ecuación de la recta paralela a \\(y = 4x\\) que pasa por el origen.",
+            "guia": "Pista: Al ser paralela, comparte la pendiente \\(m=4\\). Al pasar por el origen, \\(b=0\\)."
+        },
+        {
+            "instruccion": "Halla la pendiente perpendicular a una recta con \\(m = \\frac{2}{3}\\).",
+            "guia": "Pista: Invierte la fracción y cambia su signo."
+        },
+        {
+            "instruccion": "Verifica si \\(y = -x\\) e \\(y = x\\) son perpendiculares.",
+            "guia": "Pista: Multiplica sus pendientes: \\(-1 \\times 1 = -1\\)."
+        }
+    ],
+    "resumen": "La recta se define por una ecuación de primer grado. Las relaciones de paralelismo y perpendicularidad dependen de la igualdad o reciprocidad de sus pendientes.",
+    "bibliografia": [
+        "Kindle, J. H. (1993). Geometría Analítica (Serie Schaum). McGraw-Hill.",
+        "Swokowski, E. W., & Cole, J. A. (2011). Álgebra y Trigonometría con Geometría Analítica. Cengage Learning."
+    ]
+}

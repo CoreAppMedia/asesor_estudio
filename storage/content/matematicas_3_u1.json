@@ -1,0 +1,141 @@
+{
+    "introduccion": "La trigonometría estudia las relaciones entre los lados y los ángulos de los triángulos. Analizaremos razones trigonométricas en triángulos rectángulos y las leyes de Senos y Cosenos.",
+    "objetivos": [
+        "Definir razones trigonométricas básicas.",
+        "Utilizar la Ley de Senos en triángulos oblicuángulos.",
+        "Utilizar la Ley de Cosenos para resolver triángulos."
+    ],
+    "conocimientos_previos": [
+        "Teorema de Pitágoras y suma de ángulos internos."
+    ],
+    "explicacion": [
+        {
+            "titulo": "1. Razones trigonométricas",
+            "texto": "En un triángulo rectángulo respecto a un ángulo agudo \\(\\theta\\), se definen las siguientes razones básicas:\n\\[ \\text{sen}(\\theta) = \\frac{\\text{Cateto Opuesto (CO)}}{\\text{Hipotenusa (H)}} \\]\\[ \\cos(\\theta) = \\frac{\\text{Cateto Adyacente (CA)}}{\\text{Hipotenusa (H)}} \\]\\[ \\tan(\\theta) = \\frac{\\text{Cateto Opuesto (CO)}}{\\text{Cateto Adyacente (CA)}} \\]"
+        },
+        {
+            "titulo": "2. Ley de Senos",
+            "texto": "Para cualquier triángulo con lados \\(a, b, c\\) y ángulos opuestos \\(A, B, C\\):\n\n\\[ \\frac{a}{\\text{sen}(A)} = \\frac{b}{\\text{sen}(B)} = \\frac{c}{\\text{sen}(C)} \\]\n\nSe aplica cuando conocemos dos ángulos y cualquier lado (AAL o ALA), o dos lados y el ángulo opuesto a uno de ellos (LLA)."
+        },
+        {
+            "titulo": "3. Ley de Cosenos",
+            "texto": "Para cualquier triángulo se cumplen las siguientes relaciones:\n\n\\[ a^2 = b^2 + c^2 - 2bc \\cos(A) \\]\n\\[ b^2 = a^2 + c^2 - 2ac \\cos(B) \\]\n\\[ c^2 = a^2 + b^2 - 2ab \\cos(C) \\]\n\nSe aplica cuando conocemos dos lados y el ángulo entre ellos (LAL), o los tres lados (LLL)."
+        }
+    ],
+    "conceptos_clave": [
+        {
+            "concepto": "Razones",
+            "definicion": "Relación entre las medidas de los lados de un triángulo rectángulo respecto a sus ángulos."
+        },
+        {
+            "concepto": "Oblicuángulo",
+            "definicion": "Triángulo que no posee ningún ángulo de 90°."
+        }
+    ],
+    "ejemplos": [
+        {
+            "titulo": "Ejemplo 1.1: Calcular Seno",
+            "explicacion": "En un triángulo rectángulo, el cateto opuesto al ángulo \\(\\theta\\) mide 3 y la hipotenusa mide 5. Calcula \\(\\text{sen}(\\theta)\\).",
+            "solucion": "1. Aplicamos la fórmula: \\(\\text{sen}(\\theta) = \\frac{\\text{CO}}{\\text{H}}\\).\n2. Sustituimos valores: \\(\\text{sen}(\\theta) = \\frac{3}{5} = 0.6\\)."
+        },
+        {
+            "titulo": "Ejemplo 1.2: Calcular Tangente",
+            "explicacion": "Halla la tangente del ángulo si el cateto opuesto es 4 y el cateto adyacente es 3.",
+            "solucion": "1. Aplicamos la fórmula: \\(\\tan(\\theta) = \\frac{\\text{CO}}{\\text{CA}}\\).\n2. Sustituimos: \\(\\tan(\\theta) = \\frac{4}{3} \\approx 1.33\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.1: Ley de Senos para hallar un lado",
+            "explicacion": "En un triángulo, el ángulo \\(A = 30^\\circ\\), el ángulo \\(B = 45^\\circ\\) y el lado \\(a = 10\\text{ cm}\\). Halla el lado \\(b\\) (usa \\(\\text{sen}(30^\\circ) = 0.5\\), \\(\\text{sen}(45^\\circ) \\approx 0.707\\)).",
+            "solucion": "1. Planteamos la proporción: \\(\\frac{10}{\\text{sen}(30^\\circ)} = \\frac{b}{\\text{sen}(45^\\circ)}\\).\n2. Despejamos \\(b\\): \\(b = \\frac{10 \\times 0.707}{0.5} = 14.14\\text{ cm}\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.2: Ley de Senos para comprobar ángulos",
+            "explicacion": "Si \\(\\frac{a}{\\text{sen}(A)} = 20\\), y el lado \\(b = 10\\), halla \\(\\text{sen}(B)\\).",
+            "solucion": "1. Por la ley de senos: \\(\\frac{b}{\\text{sen}(B)} = 20 \\implies \\text{sen}(B) = \\frac{b}{20}\\).\n2. Sustituimos \\(b=10\\): \\(\\text{sen}(B) = \\frac{10}{20} = 0.5\\)."
+        },
+        {
+            "titulo": "Ejemplo 3.1: Ley de Cosenos lado faltante",
+            "explicacion": "Halla el lado \\(a\\) si \\(b=8\\), \\(c=10\\) y \\(A=60^\\circ\\) (con \\(\\cos(60^\\circ)=0.5\\)).",
+            "solucion": "1. Aplicamos la fórmula: \\(a^2 = 8^2 + 10^2 - 2(8)(10)(0.5)\\).\n2. Evaluamos: \\(a^2 = 64 + 100 - 80 = 84 \\implies a = \\sqrt{84} \\approx 9.17\\)."
+        },
+        {
+            "titulo": "Ejemplo 3.2: Ley de Cosenos ángulo",
+            "explicacion": "Determina el valor de \\(\\cos(A)\\) si \\(a=7\\), \\(b=5\\), \\(c=6\\).",
+            "solucion": "1. Despejamos la fórmula: \\(\\cos(A) = \\frac{b^2 + c^2 - a^2}{2bc}\\).\n2. Sustituimos: \\(\\cos(A) = \\frac{5^2 + 6^2 - 7^2}{2(5)(6)} = \\frac{25 + 36 - 49}{60} = \\frac{12}{60} = 0.2\\)."
+        }
+    ],
+    "errores_comunes": [
+        {
+            "error": "Usar razones trigonométricas directas en triángulos no rectángulos",
+            "ejemplo_incorrecto": "Calcular \\(\\text{sen}(\\theta) = \\frac{\\text{CO}}{\\text{H}}\\) en un triángulo oblicuángulo.",
+            "correccion": "Las razones trigonométricas directas solo aplican en triángulos rectángulos. En oblicuángulos se debe usar Ley de Senos o Cosenos."
+        }
+    ],
+    "ejercicios_guiados": [
+        {
+            "instruccion": "Si \\(\\cos(\\theta) = \\frac{4}{5}\\), calcula \\(\\text{sen}(\\theta)\\).",
+            "guia": "Pista: Usa la identidad trigonométrica fundamental \\(\\text{sen}^2(\\theta) + \\cos^2(\\theta) = 1\\)."
+        },
+        {
+            "instruccion": "Halla \\(\\tan(45^\\circ)\\) si el triángulo rectángulo tiene catetos de igual medida.",
+            "guia": "Pista: Si los catetos son iguales, el cociente \\(\\frac{\\text{CO}}{\\text{CA}}\\) es igual a 1."
+        },
+        {
+            "instruccion": "En un triángulo rectángulo la hipotenusa mide 10 y el ángulo es 30°. Halla el cateto opuesto.",
+            "guia": "Pista: Despeja de \\(\\text{sen}(30^\\circ) = \\frac{\\text{CO}}{10}\\) sabiendo que \\(\\text{sen}(30^\\circ)=0.5\\)."
+        },
+        {
+            "instruccion": "Calcula la secante si \\(\\cos(\\theta) = 0.5\\).",
+            "guia": "Pista: La secante es la recíproca del coseno: \\(\\sec(\\theta) = \\frac{1}{\\cos(\\theta)}\\)."
+        },
+        {
+            "instruccion": "Encuentra la cosecante de un ángulo cuyo seno mide \\(\\frac{3}{5}\\).",
+            "guia": "Pista: La cosecante es el recíproco de la función seno."
+        },
+        {
+            "instruccion": "Aplica la ley de senos para hallar el ángulo B si \\(a=5\\), \\(b=10\\) y \\(\\text{sen}(A)=0.2\\).",
+            "guia": "Pista: Usa la relación \\(\\frac{a}{\\text{sen}(A)} = \\frac{b}{\\text{sen}(B)}\\)."
+        },
+        {
+            "instruccion": "En un triángulo, \\(A=45^\\circ\\) y \\(B=60^\\circ\\). Si el lado opuesto a A mide 8 cm, halla el lado opuesto a B.",
+            "guia": "Pista: Aplica la Ley de Senos con los valores dados."
+        },
+        {
+            "instruccion": "Determina si podemos usar la ley de senos si conocemos dos lados y el ángulo comprendido.",
+            "guia": "Pista: No, en ese caso (LAL) se debe iniciar con la Ley de Cosenos."
+        },
+        {
+            "instruccion": "Halla la proporción \\(\\frac{a}{b}\\) en un triángulo si \\(\\angle A=30^\\circ\\) y \\(\\angle B=90^\\circ\\).",
+            "guia": "Pista: Sustituye en la Ley de Senos y calcula \\(\\frac{\\text{sen}(30^\\circ)}{\\text{sen}(90^\\circ)}\\)."
+        },
+        {
+            "instruccion": "Resuelve el lado opuesto a un ángulo de 45° si el opuesto a un ángulo de 30° mide 6 cm.",
+            "guia": "Pista: Aplica la relación de la Ley de Senos."
+        },
+        {
+            "instruccion": "Halla el lado \\(a\\) si \\(b=3\\), \\(c=4\\) y \\(\\cos(A)=0\\).",
+            "guia": "Pista: Sustituye en la ley de cosenos. El término \\(-2bc\\cos(A)\\) se anula."
+        },
+        {
+            "instruccion": "Calcula \\(a^2\\) si \\(b=5\\), \\(c=5\\) y el ángulo A mide 120° (con \\(\\cos(120^\\circ) = -0.5\\)).",
+            "guia": "Pista: Ten cuidado con el doble signo negativo: \\(-2(5)(5)(-0.5) = +25\\)."
+        },
+        {
+            "instruccion": "Si los tres lados de un triángulo miden 4, 5 y 6, ¿qué ley usas para hallar los ángulos?",
+            "guia": "Pista: Para el caso LLL, se aplica directamente la Ley de Cosenos."
+        },
+        {
+            "instruccion": "Escribe la fórmula de la Ley de Cosenos para despejar el término \\(b^2\\).",
+            "guia": "Pista: La fórmula es \\(b^2 = a^2 + c^2 - 2ac\\cos(B)\\)."
+        },
+        {
+            "instruccion": "Halla el lado \\(c\\) si \\(a=8\\), \\(b=6\\) y \\(C=90^\\circ\\).",
+            "guia": "Pista: Como \\(\\cos(90^\\circ)=0\\), la Ley de Cosenos se reduce al Teorema de Pitágoras."
+        }
+    ],
+    "resumen": "La trigonometría relaciona lados y ángulos. Empleamos razones trigonométricas en triángulos rectángulos y las leyes de Senos y Cosenos en triángulos oblicuángulos.",
+    "bibliografia": [
+        "Baldor, A. (2004). Geometría y Trigonometría. Grupo Editorial Patria.",
+        "Swokowski, E. W., & Cole, J. A. (2011). Álgebra y Trigonometría con Geometría Analítica. Cengage Learning."
+    ]
+}

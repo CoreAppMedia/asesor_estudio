@@ -1,0 +1,107 @@
+{
+    "introduccion": "Las funciones racionales y con radicales presentan comportamientos particulares como las asíntotas y las restricciones de dominio.",
+    "objetivos": [
+        "Calcular el dominio y las asíntotas en funciones racionales.",
+        "Determinar el dominio de funciones con radicales.",
+        "Esbozar gráficas de funciones racionales."
+    ],
+    "conocimientos_previos": [
+        "Desigualdades de primer y segundo grado y divisiones."
+    ],
+    "explicacion": [
+        {
+            "titulo": "1. Funciones racionales y asíntotas",
+            "texto": "Una función racional es de la forma \\(f(x) = \\frac{P(x)}{Q(x)}\\). Las asíntotas verticales ocurren donde el denominador \\(Q(x) = 0\\)."
+        },
+        {
+            "titulo": "2. Funciones con radicales",
+            "texto": "Para funciones con radicales pares \\(f(x) = \\sqrt{g(x)}\\), el dominio requiere que el radicando sea no negativo: \\(g(x) \\ge 0\\)."
+        }
+    ],
+    "conceptos_clave": [
+        {
+            "concepto": "Asíntota Vertical",
+            "definicion": "Línea vertical x = c a la que se aproxima la función sin tocarla."
+        },
+        {
+            "concepto": "Asíntota Horizontal",
+            "definicion": "Línea horizontal y = k que describe el comportamiento a largo plazo."
+        }
+    ],
+    "ejemplos": [
+        {
+            "titulo": "Ejemplo 1.1: Hallar Asíntota Vertical",
+            "explicacion": "Determina la asíntota vertical de \\(f(x) = \\frac{3}{x - 2}\\).",
+            "solucion": "1. Igualamos el denominador a cero: \\(x - 2 = 0\\).\n2. La asíntota vertical está en \\(x = 2\\)."
+        },
+        {
+            "titulo": "Ejemplo 1.2: Hallar Asíntota Horizontal",
+            "explicacion": "Halla la asíntota horizontal de \\(f(x) = \\frac{2x + 1}{x - 3}\\).",
+            "solucion": "1. Comparamos los grados (ambos de grado 1).\n2. Dividimos los coeficientes principales: \\(y = \\frac{2}{1} = 2\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.1: Dominio de Raíz Cuadrada Básica",
+            "explicacion": "Calcula el dominio de \\(f(x) = \\sqrt{x - 3}\\).",
+            "solucion": "1. Planteamos la desigualdad: \\(x - 3 \\ge 0\\).\n2. Despejamos: \\(x \\ge 3\\). El dominio es \\([3, \\infty)\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.2: Dominio con coeficiente negativo",
+            "explicacion": "Calcula el dominio de \\(f(x) = \\sqrt{6 - 2x}\\).",
+            "solucion": "1. Planteamos: \\(6 - 2x \\ge 0 \\implies 6 \\ge 2x \\implies x \\le 3\\).\n2. El dominio es \\((-\\infty, 3]\\)."
+        }
+    ],
+    "errores_comunes": [
+        {
+            "error": "Considerar valores que hacen cero al denominador en el dominio",
+            "ejemplo_incorrecto": "Decir que el dominio de \\(f(x) = \\frac{1}{x}\\) incluye al 0.",
+            "correccion": "La división entre cero no está definida. El dominio excluye al 0: \\(D_f = \\mathbb{R} \\setminus \\{0\\}\\)."
+        }
+    ],
+    "ejercicios_guiados": [
+        {
+            "instruccion": "Halla el dominio de \\(f(x) = \\frac{1}{x - 5}\\).",
+            "guia": "Pista: Excluye el valor de x que hace cero el denominador."
+        },
+        {
+            "instruccion": "Determina la asíntota vertical de \\(f(x) = \\frac{2}{x + 4}\\).",
+            "guia": "Pista: Iguala el denominador a cero."
+        },
+        {
+            "instruccion": "Halla la asíntota horizontal de \\(f(x) = \\frac{5x}{x - 2}\\).",
+            "guia": "Pista: Divide los coeficientes principales de las variables con el mayor exponente."
+        },
+        {
+            "instruccion": "¿Tiene asíntota horizontal la función \\(f(x) = \\frac{x^2}{x + 1}\\)?",
+            "guia": "Pista: No, si el grado del numerador es mayor que el del denominador, no hay AH."
+        },
+        {
+            "instruccion": "Determina la asíntota vertical de la función \\(f(x) = \\frac{x}{x^2 - 9}\\).",
+            "guia": "Pista: El denominador tiene dos raíces, \\(x = 3\\) y \\(x = -3\\)."
+        },
+        {
+            "instruccion": "Calcula el dominio de \\(f(x) = \\sqrt{x - 5}\\).",
+            "guia": "Pista: Plantea la condición de no negatividad del radicando."
+        },
+        {
+            "instruccion": "Calcula el dominio de \\(f(x) = \\sqrt{2x - 8}\\).",
+            "guia": "Pista: Resuelve la desigualdad \\(2x - 8 \\ge 0\\)."
+        },
+        {
+            "instruccion": "Halla el dominio de \\(f(x) = \\sqrt{10 - x}\\).",
+            "guia": "Pista: Resuelve la desigualdad con signo negativo en la variable."
+        },
+        {
+            "instruccion": "Determina si \\(x = 2\\) está en el dominio de \\(f(x) = \\sqrt{x - 4}\\).",
+            "guia": "Pista: Comprueba si al sustituir se obtiene una raíz de número negativo."
+        },
+        {
+            "instruccion": "Calcula el dominio de \\(f(x) = \\sqrt{3x - 12}\\).",
+            "guia": "Pista: Resuelve la inecuación lineal."
+        }
+    ],
+    "resumen": "Las funciones racionales y radicales poseen restricciones que determinan su dominio y formas de comportamiento como las asíntotas.",
+    "bibliografia": [
+        "Larson, R., & Falvo, D. (2011). Precálculo. Cengage Learning.",
+        "Stewart, J., Redlin, L., & Watson, S. (2012). Precálculo: Matemáticas para el cálculo. Cengage Learning."
+    ]
+}

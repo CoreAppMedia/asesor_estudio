@@ -1,0 +1,141 @@
+{
+    "introduccion": "La variación lineal describe relaciones donde un cambio en una variable produce un cambio proporcional y constante en otra. Analizaremos tablas, gráficas y la clásica ecuación de la recta.",
+    "objetivos": [
+        "Identificar relaciones de proporcionalidad directa.",
+        "Representar funciones lineales en tablas y gráficas.",
+        "Modelar mediante la ecuación y = mx + b."
+    ],
+    "conocimientos_previos": [
+        "Operaciones aritméticas básicas y ubicación de coordenadas."
+    ],
+    "explicacion": [
+        {
+            "titulo": "1. Proporcionalidad directa y razón de cambio",
+            "texto": "Dos variables son directamente proporcionales si su cociente \\(\\frac{y}{x} = k\\) es constante."
+        },
+        {
+            "titulo": "2. Representación algebraica: y = mx + b",
+            "texto": "Una relación lineal se escribe de la forma \\(y = mx + b\\) donde \\(m\\) es la pendiente y \\(b\\) la ordenada al origen."
+        },
+        {
+            "titulo": "3. Pendiente de una recta",
+            "texto": "La pendiente \\(m\\) mide la inclinación de la recta y se calcula a partir de dos puntos mediante \\(m = \\frac{y_2 - y_1}{x_2 - x_1}\\)."
+        }
+    ],
+    "conceptos_clave": [
+        {
+            "concepto": "Pendiente (m)",
+            "definicion": "Tasa de cambio constante de y respecto a x."
+        },
+        {
+            "concepto": "Ordenada al origen (b)",
+            "definicion": "Valor de y cuando x = 0."
+        }
+    ],
+    "ejemplos": [
+        {
+            "titulo": "Ejemplo 1.1: Costo Proporcional",
+            "explicacion": "Si 3 manzanas cuestan $15, ¿cuál es la constante de proporcionalidad?",
+            "solucion": "1. Dividimos el costo entre la cantidad: \\(\\frac{15}{3} = 5\\).\n2. La constante de proporcionalidad es \\(k = 5\\) pesos por manzana."
+        },
+        {
+            "titulo": "Ejemplo 1.2: Razón de Cambio",
+            "explicacion": "Un auto recorre 120 km en 2 horas a velocidad constante. Halla la razón de cambio.",
+            "solucion": "1. Razón = \\(\\frac{120\\text{ km}}{2\\text{ h}} = 60\\text{ km/h}\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.1: Identificar m y b",
+            "explicacion": "Identifica la pendiente y la ordenada de la recta \\(y = 2x + 3\\).",
+            "solucion": "1. Comparamos con \\(y = mx + b\\).\n2. Obtenemos \\(m = 2\\) y \\(b = 3\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.2: Evaluar Función Lineal",
+            "explicacion": "Encuentra el valor de \\(y\\) si \\(x = 4\\) en la recta \\(y = -3x + 5\\).",
+            "solucion": "1. Sustituimos \\(x=4\\): \\(y = -3(4) + 5\\).\n2. Calculamos: \\(y = -12 + 5 = -7\\)."
+        },
+        {
+            "titulo": "Ejemplo 3.1: Pendiente Positiva",
+            "explicacion": "Halla la pendiente que pasa por \\(A(1, 2)\\) y \\(B(3, 6)\\).",
+            "solucion": "1. Aplicamos la fórmula: \\(m = \\frac{6 - 2}{3 - 1} = \\frac{4}{2} = 2\\)."
+        },
+        {
+            "titulo": "Ejemplo 3.2: Pendiente Negativa",
+            "explicacion": "Halla la pendiente que pasa por \\(C(0, 5)\\) y \\(D(2, 1)\\).",
+            "solucion": "1. Aplicamos la fórmula: \\(m = \\frac{1 - 5}{2 - 0} = \\frac{-4}{2} = -2\\)."
+        }
+    ],
+    "errores_comunes": [
+        {
+            "error": "Invertir la fórmula de la pendiente",
+            "ejemplo_incorrecto": "Calcular la pendiente como \\(\\frac{x_2 - x_1}{y_2 - y_1}\\).",
+            "correccion": "La fórmula correcta es \\(m = \\frac{y_2 - y_1}{x_2 - x_1}\\)."
+        }
+    ],
+    "ejercicios_guiados": [
+        {
+            "instruccion": "Si 2 cuadernos cuestan $40, ¿cuánto cuestan 5?",
+            "guia": "Pista: Encuentra primero el precio unitario dividiendo 40 entre 2."
+        },
+        {
+            "instruccion": "Determina la constante de proporcionalidad si \\(y=10\\) cuando \\(x=2\\).",
+            "guia": "Pista: Aplica la fórmula \\(k = \\frac{y}{x}\\)."
+        },
+        {
+            "instruccion": "Un tanque de agua de 100 litros se llena a 5 litros por minuto. ¿Cuál es la razón de cambio?",
+            "guia": "Pista: La tasa de llenado constante es la razón de cambio (5 litros/minuto)."
+        },
+        {
+            "instruccion": "Si recorres 10 metros en 2 segundos, halla la constante de velocidad.",
+            "guia": "Pista: Divide la distancia recorrida entre el tiempo empleado."
+        },
+        {
+            "instruccion": "En una receta, 2 tazas de harina sirven para 8 galletas. ¿Cuántas galletas se hacen con 1 taza?",
+            "guia": "Pista: Simplifica la proporción dividiendo 8 entre 2."
+        },
+        {
+            "instruccion": "Identifica \\(m\\) y \\(b\\) en \\(y = 4x - 1\\).",
+            "guia": "Pista: El número que acompaña a la variable es \\(m\\), el independiente es \\(b\\)."
+        },
+        {
+            "instruccion": "Grafica la recta \\(y = x + 2\\) tabulando con \\(x=0\\) y \\(x=1\\).",
+            "guia": "Pista: Cuando \\(x=0\\), \\(y=2\\); cuando \\(x=1\\), \\(y=3\\)."
+        },
+        {
+            "instruccion": "Halla la ordenada al origen de \\(y = -x\\).",
+            "guia": "Pista: Al no haber término constante, la ordenada \\(b\\) es igual a 0."
+        },
+        {
+            "instruccion": "Obtén la ecuación lineal con pendiente \\(m=3\\) y ordenada al origen \\(b=5\\).",
+            "guia": "Pista: Escribe la ecuación sustituyendo directamente en \\(y = mx + b\\)."
+        },
+        {
+            "instruccion": "Determina si la recta \\(y = -2x + 4\\) es creciente o decreciente.",
+            "guia": "Pista: Observa el signo de la pendiente \\(m\\). Al ser negativo, decrece."
+        },
+        {
+            "instruccion": "Calcula la pendiente que pasa por \\((2, 3)\\) y \\((4, 7)\\).",
+            "guia": "Pista: Resta las coordenadas \\(y\\) en el numerador y las \\(x\\) en el denominador."
+        },
+        {
+            "instruccion": "Calcula la pendiente que pasa por \\((-1, 2)\\) y \\((1, 6)\\).",
+            "guia": "Pista: Ten cuidado con los signos al restar: \\(1 - (-1) = 2\\)."
+        },
+        {
+            "instruccion": "Calcula la pendiente que pasa por \\((0, 0)\\) y \\((3, 9)\\).",
+            "guia": "Pista: Aplica la fórmula estándar simplificada desde el origen."
+        },
+        {
+            "instruccion": "Determina la pendiente si la recta es horizontal y pasa por \\((1, 4)\\) y \\((5, 4)\\).",
+            "guia": "Pista: Como el cambio en \\(y\\) es cero, la pendiente es 0."
+        },
+        {
+            "instruccion": "Calcula la pendiente si pasa por \\((2, -3)\\) y \\((5, -9)\\).",
+            "guia": "Pista: Aplica la fórmula con valores negativos."
+        }
+    ],
+    "resumen": "La variación lineal se caracteriza por una pendiente constante y se modela algebraicamente con la forma explícita \\(y = mx + b\\).",
+    "bibliografia": [
+        "Swokowski, E. W., & Cole, J. A. (2011). Álgebra y Trigonometría con Geometría Analítica. Cengage Learning.",
+        "Sullivan, M. (2006). Álgebra y Trigonometría. Pearson Educación."
+    ]
+}

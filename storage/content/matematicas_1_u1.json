@@ -1,0 +1,146 @@
+{
+    "introduccion": "En esta unidad iniciaremos el estudio de las matemáticas del bachillerato. Analizaremos la transición de los números enteros a los números reales, y revisaremos las reglas esenciales para operar con ellos de forma exacta y coherente, utilizando el lenguaje algebraico.",
+    "objetivos": [
+        "Comprender la diferencia y relación entre los números enteros y los números reales.",
+        "Aplicar de forma rigurosa la jerarquía de las operaciones en expresiones numéricas.",
+        "Traducir problemas del lenguaje común al lenguaje algebraico."
+    ],
+    "conocimientos_previos": [
+        "Operaciones aritméticas básicas (suma, resta, multiplicación, división).",
+        "Nociones básicas de variables y constantes."
+    ],
+    "explicacion": [
+        {
+            "titulo": "1. Números reales y la recta numérica",
+            "texto": "Los números reales \\(\\mathbb{R}\\) comprenden tanto a los números racionales \\(\\mathbb{Q}\\) como a los números irracionales. Gráficamente, a cada número real le corresponde un punto único sobre la recta numérica."
+        },
+        {
+            "titulo": "2. Jerarquía de operaciones",
+            "texto": "Para resolver expresiones con múltiples operadores, debemos seguir un orden de precedencia estricto:\n1. Paréntesis y agrupación: \\(( ), [ ], \\{ \\}\\)\n2. Potencias y raíces: \\(x^a\\), \\(\\sqrt{x}\\)\n3. Multiplicaciones y divisiones (de izquierda a derecha)\n4. Sumas y restas (de izquierda a derecha)"
+        },
+        {
+            "titulo": "3. Lenguaje Algebraico",
+            "texto": "El lenguaje algebraico nos permite generalizar relaciones aritméticas mediante el uso de letras (variables)."
+        }
+    ],
+    "conceptos_clave": [
+        {
+            "concepto": "Números Reales (\\(\\mathbb{R}\\))",
+            "definicion": "El conjunto de todos los números racionales e irracionales."
+        },
+        {
+            "concepto": "Jerarquía de Operaciones",
+            "definicion": "Conjunto de reglas convencionales que indican qué operaciones realizar primero."
+        },
+        {
+            "concepto": "Variable",
+            "definicion": "Símbolo que representa una cantidad que puede cambiar."
+        }
+    ],
+    "ejemplos": [
+        {
+            "titulo": "Ejemplo 1.1: Clasificación de Números",
+            "explicacion": "Clasifica los números \\(\\frac{3}{4}\\) y \\(\\sqrt{2}\\) como racionales o irracionales.",
+            "solucion": "1. \\(\\frac{3}{4}\\) se puede expresar como fracción de enteros, por lo tanto, es racional (\\(\\mathbb{Q}\\)).\n2. \\(\\sqrt{2} \\approx 1.4142...\\) no se puede expresar como fracción, por lo tanto, es irracional."
+        },
+        {
+            "titulo": "Ejemplo 1.2: Orden en la Recta Numérica",
+            "explicacion": "Ubica de forma relativa en la recta numérica los puntos \\(A(-1.5)\\) y \\(B(0.75)\\).",
+            "solucion": "1. \\(A(-1.5)\\) está situado a la izquierda del origen (0) a una distancia de 1.5 unidades.\n2. \\(B(0.75)\\) está situado a la derecha del origen a una distancia de 0.75 unidades. Por lo tanto, \\(A < B\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.1: Operación Básica",
+            "explicacion": "Simplifica la expresión: \\(8 + 2 \\times 5\\).",
+            "solucion": "1. Multiplicamos primero: \\(2 \\times 5 = 10\\).\n2. Realizamos la suma: \\(8 + 10 = 18\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.2: Operación con Paréntesis",
+            "explicacion": "Resuelve: \\(3 \\times (4 + 6) \\div 2\\).",
+            "solucion": "1. Resolvemos el paréntesis: \\(4 + 6 = 10\\).\n2. Multiplicamos: \\(3 \\times 10 = 30\\).\n3. Dividimos: \\(30 \\div 2 = 15\\)."
+        },
+        {
+            "titulo": "Ejemplo 3.1: Traducción a Álgebra",
+            "explicacion": "Traduce la frase: 'El doble de un número aumentado en tres'.",
+            "solucion": "1. Definimos el número como \\(x\\).\n2. El doble del número es \\(2x\\).\n3. Aumentado en tres es \\(2x + 3\\)."
+        },
+        {
+            "titulo": "Ejemplo 3.2: Traducción con Potencias",
+            "explicacion": "Traduce la frase: 'La mitad del cuadrado de un número'.",
+            "solucion": "1. Definimos el número como \\(y\\).\n2. Su cuadrado es \\(y^2\\).\n3. La mitad es \\(\\frac{y^2}{2}\\)."
+        }
+    ],
+    "errores_comunes": [
+        {
+            "error": "Sumar antes de multiplicar",
+            "ejemplo_incorrecto": "En la operación \\(2 + 3 \\times 4\\), hacer \\(5 \\times 4 = 20\\).",
+            "correccion": "La forma correcta es \\(2 + (3 \\times 4) = 2 + 12 = 14\\)."
+        }
+    ],
+    "ejercicios_guiados": [
+        {
+            "instruccion": "Determina si \\(\\pi\\) es racional o irracional.",
+            "guia": "Pista: Observa si tiene decimales periódicos o no."
+        },
+        {
+            "instruccion": "Ordena de menor a mayor: \\(-3\\), \\(\\sqrt{4}\\), \\(-0.5\\).",
+            "guia": "Pista: Convierte cada uno a número decimal e identifica su posición en la recta."
+        },
+        {
+            "instruccion": "Identifica a qué conjunto pertenece el número \\(-5\\).",
+            "guia": "Pista: Es un entero negativo, que también pertenece al conjunto de los racionales."
+        },
+        {
+            "instruccion": "Determina si \\(0.333...\\) se puede expresar como fracción.",
+            "guia": "Pista: Sí, equivale a \\(\\frac{1}{3}\\), por lo que es racional."
+        },
+        {
+            "instruccion": "Determina si \\(\\sqrt{9}\\) es racional.",
+            "guia": "Pista: Simplifica la raíz, \\(\\sqrt{9} = 3\\), por lo tanto es racional."
+        },
+        {
+            "instruccion": "Simplifica: \\(12 - 3 \\times 2\\).",
+            "guia": "Pista: Realiza primero la multiplicación \\(3 \\times 2\\)."
+        },
+        {
+            "instruccion": "Simplifica: \\((8 - 2) \\times 4\\).",
+            "guia": "Pista: Primero resuelve la resta dentro del paréntesis."
+        },
+        {
+            "instruccion": "Simplifica: \\(5 \\times 2 + 18 \\div 3\\).",
+            "guia": "Pista: Realiza la multiplicación y división de izquierda a derecha antes de sumar."
+        },
+        {
+            "instruccion": "Simplifica: \\(2^3 + 4 \\times 3\\).",
+            "guia": "Pista: Calcula la potencia \\(2^3 = 8\\) antes de multiplicar."
+        },
+        {
+            "instruccion": "Simplifica: \\(15 - (6 + 3) \\times 2\\).",
+            "guia": "Pista: Primero haz el paréntesis, luego multiplica por 2 y finalmente resta."
+        },
+        {
+            "instruccion": "Traduce: 'El triple de un número'.",
+            "guia": "Pista: Usa la variable \\(x\\) y multiplícala por 3."
+        },
+        {
+            "instruccion": "Traduce: 'Un número disminuido en siete'.",
+            "guia": "Pista: Resta 7 de la variable \\(x\\)."
+        },
+        {
+            "instruccion": "Traduce: 'La suma de dos números consecutivos'.",
+            "guia": "Pista: Representa los números como \\(x\\) y \\(x+1\\)."
+        },
+        {
+            "instruccion": "Traduce: 'El cuadrado de un número más uno'.",
+            "guia": "Pista: Eleva la variable \\(x\\) al cuadrado y súmale 1."
+        },
+        {
+            "instruccion": "Traduce: 'El producto de dos números'.",
+            "guia": "Pista: Usa dos variables distintas, ej. \\(a \\times b\\)."
+        }
+    ],
+    "resumen": "En esta lección consolidamos las herramientas aritméticas básicas, comprendimos la jerarquía de las operaciones y aprendimos a modelar expresiones algebraicas.",
+    "bibliografia": [
+        "Swokowski, E. W., & Cole, J. A. (2011). Álgebra y Trigonometría con Geometría Analítica. Cengage Learning.",
+        "Baldor, A. (2007). Álgebra. Grupo Editorial Patria."
+    ]
+}

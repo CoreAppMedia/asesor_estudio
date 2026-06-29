@@ -1,0 +1,107 @@
+{
+    "introduccion": "La parábola es una sección cónica definida como el lugar geométrico de puntos que equidistan de un foco y una directriz. Estudiaremos sus ecuaciones.",
+    "objetivos": [
+        "Comprender la parábola e identificar sus componentes.",
+        "Determinar ecuaciones ordinarias y generales.",
+        "Obtener elementos de la parábola a partir de su ecuación."
+    ],
+    "conocimientos_previos": [
+        "Completar el trinomio cuadrado perfecto y distancia en el plano."
+    ],
+    "explicacion": [
+        {
+            "titulo": "1. Definición y Elementos de la Parábola",
+            "texto": "La parábola es el lugar geométrico de puntos que equidistan de un foco \\(F\\) y una directriz \\(d\\). Sus elementos son el vértice, el foco, la directriz y el lado recto \\(LR = |4p|\\)."
+        },
+        {
+            "titulo": "2. Ecuación ordinaria de la parábola",
+            "texto": "La ecuación ordinaria vertical es \\((x - h)^2 = 4p(y - k)\\) y la horizontal es \\((y - k)^2 = 4p(x - h)\\)."
+        }
+    ],
+    "conceptos_clave": [
+        {
+            "concepto": "Parámetro p",
+            "definicion": "Distancia con signo desde el vértice al foco."
+        },
+        {
+            "concepto": "Lado Recto",
+            "definicion": "Ancho focal de la parábola equivalente a |4p|."
+        }
+    ],
+    "ejemplos": [
+        {
+            "titulo": "Ejemplo 1.1: Calcular Lado Recto",
+            "explicacion": "Determina el lado recto de una parábola si el parámetro \\(p = 3\\).",
+            "solucion": "1. Usamos la fórmula: \\(LR = |4p|\\).\n2. Evaluamos: \\(LR = |4(3)| = 12\\)."
+        },
+        {
+            "titulo": "Ejemplo 1.2: Obtener Foco en el origen",
+            "explicacion": "Halla el foco de la parábola vertical \\(x^2 = 8y\\) con vértice en el origen.",
+            "solucion": "1. Identificamos \\(4p = 8 \\implies p = 2\\).\n2. Al ser vertical, el foco se sitúa en \\(F(0, p) = F(0, 2)\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.1: Parábola Horizontal",
+            "explicacion": "Encuentra la ecuación ordinaria de la parábola horizontal con vértice \\(V(2, 3)\\) y \\(p=2\\).",
+            "solucion": "1. Usamos la forma horizontal: \\((y - k)^2 = 4p(x - h)\\).\n2. Sustituimos valores: \\((y - 3)^2 = 8(x - 2)\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.2: Parábola Vertical abre abajo",
+            "explicacion": "Encuentra la ecuación ordinaria de la parábola vertical con vértice \\(V(0, 0)\\) y \\(p=-3\\).",
+            "solucion": "1. Usamos la forma vertical: \\(x^2 = 4py\\).\n2. Sustituimos: \\(x^2 = -12y\\)."
+        }
+    ],
+    "errores_comunes": [
+        {
+            "error": "Intercambiar los términos cuadráticos de las orientaciones",
+            "ejemplo_incorrecto": "Escribir \\((x - h)^2 = 4p(y - k)\\) para una parábola horizontal.",
+            "correccion": "La parábola horizontal tiene el término cuadrático en \\(y\\): \\((y - k)^2 = 4p(x - h)\\)."
+        }
+    ],
+    "ejercicios_guiados": [
+        {
+            "instruccion": "Calcula el lado recto de la parábola si \\(p = -4\\).",
+            "guia": "Pista: El lado recto es siempre positivo: \\(LR = |4p|\\)."
+        },
+        {
+            "instruccion": "Halla el foco de la parábola \\(x^2 = 12y\\).",
+            "guia": "Pista: Determina \\(4p = 12\\) para calcular \\(p\\)."
+        },
+        {
+            "instruccion": "Determina la directriz de la parábola vertical \\(x^2 = 8y\\) con vértice en el origen.",
+            "guia": "Pista: La ecuación de la directriz es \\(y = -p\\)."
+        },
+        {
+            "instruccion": "Si el foco es \\(F(3, 0)\\) y el vértice es \\(V(0,0)\\), halla el parámetro \\(p\\).",
+            "guia": "Pista: El parámetro es la distancia con signo del vértice al foco, \\(p=3\\)."
+        },
+        {
+            "instruccion": "Halla el lado recto de la parábola con ecuación \\(y^2 = 20x\\).",
+            "guia": "Pista: El coeficiente del término lineal es igual a \\(4p\\)."
+        },
+        {
+            "instruccion": "Halla la ecuación ordinaria de la parábola horizontal con \\(V(0,0)\\) y \\(p=4\\).",
+            "guia": "Pista: Aplica la ecuación \\(y^2 = 4px\\)."
+        },
+        {
+            "instruccion": "Encuentra la ecuación ordinaria con \\(V(1, 2)\\), vertical y \\(p=2\\).",
+            "guia": "Pista: Usa la forma \\((x - h)^2 = 4p(y - k)\\)."
+        },
+        {
+            "instruccion": "Halla la ecuación ordinaria de la parábola vertical con \\(V(3, -1)\\) y \\(p=-1\\).",
+            "guia": "Pista: Sustituye con cuidado los signos negativos en los binomios."
+        },
+        {
+            "instruccion": "Convierte la ecuación \\(y^2 = 8x\\) a su representación con elementos de parábola horizontal.",
+            "guia": "Pista: Identifica que \\(h=0\\), \\(k=0\\) y \\(p=2\\)."
+        },
+        {
+            "instruccion": "Encuentra la ecuación ordinaria con \\(V(2, 2)\\), horizontal y \\(p=-2\\).",
+            "guia": "Pista: Sustituye directamente en la forma horizontal."
+        }
+    ],
+    "resumen": "La parábola es determinada por la distancia constante a un foco y a una directriz. Su ecuación depende del vértice y de la orientación del eje focal.",
+    "bibliografia": [
+        "Kindle, J. H. (1993). Geometría Analítica (Serie Schaum). McGraw-Hill.",
+        "Swokowski, E. W., & Cole, J. A. (2011). Álgebra y Trigonometría con Geometría Analítica. Cengage Learning."
+    ]
+}

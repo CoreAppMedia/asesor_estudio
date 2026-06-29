@@ -1,0 +1,140 @@
+{
+    "introduccion": "La geometría plana estudia las figuras en superficies bidimensionales. Repasaremos ángulos, triángulos y fórmulas para calcular perímetros y áreas.",
+    "objetivos": [
+        "Clasificar ángulos e identificar relaciones.",
+        "Comprender la suma de ángulos internos en triángulos.",
+        "Calcular perímetros y áreas de polígonos."
+    ],
+    "conocimientos_previos": [
+        "Operaciones aritméticas y álgebra básica."
+    ],
+    "explicacion": [
+        {
+            "titulo": "1. Clasificación de ángulos",
+            "texto": "Los ángulos se clasifican por su medida en: agudo (<90°), recto (90°), obtuso (>90° y <180°) y llano (180°)."
+        },
+        {
+            "titulo": "2. Propiedades de los triángulos",
+            "texto": "La suma de los ángulos internos de cualquier triángulo siempre es igual a 180° (\\(\\angle A + \\angle B + \\angle C = 180^\\circ\\))."
+        },
+        {
+            "titulo": "3. Perímetro y Área",
+            "texto": "El perímetro es la longitud del contorno y el área es la medida de la superficie de una figura."
+        }
+    ],
+    "conceptos_clave": [
+        {
+            "concepto": "Complementarios",
+            "definicion": "Ángulos cuya suma es 90°."
+        },
+        {
+            "concepto": "Suplementarios",
+            "definicion": "Ángulos cuya suma es 180°."
+        }
+    ],
+    "ejemplos": [
+        {
+            "titulo": "Ejemplo 1.1: Ángulo Complementario",
+            "explicacion": "Halla el complemento de un ángulo de \\(40^\\circ\\).",
+            "solucion": "1. El complemento es \\(90^\\circ - 40^\\circ = 50^\\circ\\)."
+        },
+        {
+            "titulo": "Ejemplo 1.2: Ángulo Suplementario",
+            "explicacion": "Halla el suplemento de un ángulo de \\(110^\\circ\\).",
+            "solucion": "1. El suplemento es \\(180^\\circ - 110^\\circ = 70^\\circ\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.1: Ángulo Desconocido",
+            "explicacion": "Si dos ángulos de un triángulo miden \\(50^\\circ\\) y \\(70^\\circ\\), ¿cuánto mide el tercero?",
+            "solucion": "1. Sumamos los conocidos: \\(50^\\circ + 70^\\circ = 120^\\circ\\).\n2. Restamos de 180°: \\(180^\\circ - 120^\\circ = 60^\\circ\\)."
+        },
+        {
+            "titulo": "Ejemplo 2.2: Ángulo en Triángulo Rectángulo",
+            "explicacion": "En un triángulo rectángulo, uno de los ángulos agudos mide \\(35^\\circ\\). Halla el otro.",
+            "solucion": "1. Sabemos que el ángulo recto mide 90°.\n2. La suma de los dos agudos es 90°: \\(90^\\circ - 35^\\circ = 55^\\circ\\)."
+        },
+        {
+            "titulo": "Ejemplo 3.1: Área del Triángulo",
+            "explicacion": "Calcula el área de un triángulo de base 6 cm y altura 4 cm.",
+            "solucion": "1. Aplicamos la fórmula: \\(A = \\frac{b \\times h}{2} = \\frac{6 \\times 4}{2} = 12\\text{ cm}^2\\)."
+        },
+        {
+            "titulo": "Ejemplo 3.2: Área del Rectángulo",
+            "explicacion": "Calcula el área de un rectángulo con dimensiones 5 cm por 10 cm.",
+            "solucion": "1. Aplicamos la fórmula: \\(A = b \\times h = 5 \\times 10 = 50\\text{ cm}^2\\)."
+        }
+    ],
+    "errores_comunes": [
+        {
+            "error": "Confundir complementarios con suplementarios",
+            "ejemplo_incorrecto": "Buscar el complemento de \\(50^\\circ\\) calculando \\(180^\\circ - 50^\\circ = 130^\\circ\\).",
+            "correccion": "El complemento se resta de 90° (da 40°). El suplemento se resta de 180°."
+        }
+    ],
+    "ejercicios_guiados": [
+        {
+            "instruccion": "Halla el complemento de \\(35^\\circ\\).",
+            "guia": "Pista: Resta \\(35^\\circ\\) de \\(90^\\circ\\)."
+        },
+        {
+            "instruccion": "Halla el suplemento de \\(80^\\circ\\).",
+            "guia": "Pista: Resta \\(80^\\circ\\) de \\(180^\\circ\\)."
+        },
+        {
+            "instruccion": "Clasifica un ángulo que mide \\(95^\\circ\\).",
+            "guia": "Pista: Al ser mayor a 90° y menor a 180°, se denomina obtuso."
+        },
+        {
+            "instruccion": "Clasifica un ángulo de \\(270^\\circ\\).",
+            "guia": "Pista: Al ser mayor a 180° pero menor a 360° es un ángulo cóncavo."
+        },
+        {
+            "instruccion": "Halla el complemento de un ángulo de \\(45^\\circ\\).",
+            "guia": "Pista: Resta \\(45^\\circ\\) de \\(90^\\circ\\)."
+        },
+        {
+            "instruccion": "Halla el ángulo faltante si dos de ellos miden \\(30^\\circ\\) y \\(90^\\circ\\).",
+            "guia": "Pista: Suma los dos ángulos dados y resta el resultado de \\(180^\\circ\\)."
+        },
+        {
+            "instruccion": "Determina si existe un triángulo cuyos lados sean \\(5\\), \\(5\\) y \\(12\\).",
+            "guia": "Pista: Por desigualdad triangular, la suma de los dos lados menores debe ser mayor que el mayor."
+        },
+        {
+            "instruccion": "¿Cuál es la suma de los ángulos agudos de un triángulo rectángulo?",
+            "guia": "Pista: Es siempre \\(90^\\circ\\), pues el ángulo recto ya ocupa \\(90^\\circ\\) del total."
+        },
+        {
+            "instruccion": "Calcula los ángulos internos de un triángulo equilátero.",
+            "guia": "Pista: Un triángulo equilátero tiene sus tres ángulos iguales. Divide 180 entre 3."
+        },
+        {
+            "instruccion": "Verifica si se puede construir un triángulo con lados \\(6\\text{ cm}\\), \\(8\\text{ cm}\\) y \\(10\\text{ cm}\\).",
+            "guia": "Pista: Comprueba si \\(6 + 8 > 10\\)."
+        },
+        {
+            "instruccion": "Calcula el área de un rectángulo de base 8 cm y altura 5 cm.",
+            "guia": "Pista: Aplica la fórmula del área \\(A = b \\times h\\)."
+        },
+        {
+            "instruccion": "Halla el perímetro de un triángulo equilátero cuyo lado mide 7 cm.",
+            "guia": "Pista: Multiplica la longitud del lado por 3."
+        },
+        {
+            "instruccion": "Calcula el área de un triángulo con base 10 cm y altura 5 cm.",
+            "guia": "Pista: Aplica la fórmula del área del triángulo."
+        },
+        {
+            "instruccion": "Halla el perímetro de un círculo con radio de 2 cm (usa \\(\\pi \\approx 3.14\\)).",
+            "guia": "Pista: Aplica la fórmula de la circunferencia \\(P = 2\\pi r\\)."
+        },
+        {
+            "instruccion": "Calcula el perímetro de un cuadrado de lado 4 cm.",
+            "guia": "Pista: Suma la longitud de sus cuatro lados."
+        }
+    ],
+    "resumen": "La geometría plana estudia figuras en dos dimensiones, utilizando teoremas de ángulos y triángulos para resolver problemas de perímetros y áreas.",
+    "bibliografia": [
+        "Baldor, A. (2004). Geometría y Trigonometría. Grupo Editorial Patria."
+    ]
+}
