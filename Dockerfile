@@ -22,7 +22,7 @@ RUN npm run build
 # ==========================================
 FROM php:8.3-apache AS production
 
-# Instalar dependencias del sistema y extensiones de PHP necesarias para PostgreSQL
+# Instalar dependencias del sistema y extensiones de PHP necesarias para PostgreSQL y MySQL
 RUN apt-get update && apt-get install -y \
     git \
     unzip \
@@ -35,7 +35,7 @@ RUN apt-get update && apt-get install -y \
     libwebp-dev \
     libfreetype6-dev \
     && docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp \
-    && docker-php-ext-install pdo pdo_pgsql zip mbstring gd exif opcache \
+    && docker-php-ext-install pdo pdo_pgsql pdo_mysql zip mbstring gd exif opcache \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Instalar Composer
@@ -49,8 +49,8 @@ RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.
 # Habilitar el módulo de reescritura de Apache (mod_rewrite) para Laravel .htaccess
 RUN a2enmod rewrite
 
-# Configurar Apache para que escuche en el puerto dinámico asignado por Render ($PORT)
-ENV PORT=10000
+# Configurar Apache para que escuche en el puerto 3100 asignado para Dokploy
+ENV PORT=3100
 RUN sed -s -i -e "s/Listen 80/Listen \${PORT}/" /etc/apache2/ports.conf
 RUN sed -s -i -e "s/<VirtualHost \*:80>/<VirtualHost *:\${PORT}>/" /etc/apache2/sites-available/*.conf
 
@@ -87,7 +87,7 @@ RUN rm -rf public/storage && php artisan storage:link
 # Dar permisos a storage y bootstrap/cache (necesarios para que Laravel escriba logs y caché)
 RUN chmod -R 775 storage bootstrap/cache
 
-# Puerto que expone la aplicación
+# Puerto que expone la aplicación para Dokploy
 EXPOSE ${PORT}
 
 # Comando de arranque seguro: limpiar caché, cachear para producción,

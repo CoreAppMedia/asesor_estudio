@@ -26,3 +26,9 @@ _ide_helper.php
 Homestead.json
 Homestead.yaml
 Thumbs.db
+
+# Dockerfile y Dockploy local/desarrollo/producción
+[Dd]ockerfile-*
+dockerfile-produccion copy
+dockploy-*
+
