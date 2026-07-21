@@ -42,7 +42,7 @@ RUN apt-get update && apt-get install -y \
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 # Configurar Apache DocumentRoot para apuntar a la carpeta public de Laravel
-ENV APACHE_DOCUMENT_ROOT /var/www/html/public
+ENV APACHE_DOCUMENT_ROOT=/var/www/html/public
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
 
@@ -87,16 +87,12 @@ RUN rm -rf public/storage && php artisan storage:link
 # Dar permisos a storage y bootstrap/cache (necesarios para que Laravel escriba logs y caché)
 RUN chmod -R 775 storage bootstrap/cache
 
+# Copiar y configurar el script de entrada (entrypoint)
+COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+
 # Puerto que expone la aplicación para Dokploy
 EXPOSE ${PORT}
 
-# Comando de arranque seguro: limpiar caché, cachear para producción,
-# ejecutar migraciones sin borrar datos (usando migrate --force) y arrancar Apache
-CMD php artisan config:clear && \
-    php artisan cache:clear && \
-    php artisan config:cache && \
-    php artisan route:cache && \
-    php artisan view:cache && \
-    php artisan migrate --force && \
-    php artisan db:seed --force && \
-    apache2-foreground
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+CMD ["apache2-foreground"]
