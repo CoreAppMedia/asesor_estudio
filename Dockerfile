@@ -51,8 +51,8 @@ RUN a2enmod rewrite
 
 # Configurar Apache para que escuche en el puerto 3100 asignado para Dokploy
 ENV PORT=3100
-RUN sed -s -i -e "s/Listen 80/Listen \${PORT}/" /etc/apache2/ports.conf
-RUN sed -s -i -e "s/<VirtualHost \*:80>/<VirtualHost *:\${PORT}>/" /etc/apache2/sites-available/*.conf
+RUN sed -s -i -e "s/Listen 80/Listen 3100/" /etc/apache2/ports.conf
+RUN sed -s -i -e "s/<VirtualHost \*:80>/<VirtualHost *:3100>/" /etc/apache2/sites-available/*.conf
 
 # Configurar límites de carga de archivos (para imágenes de cámara u otros archivos)
 RUN echo "upload_max_filesize=25M\npost_max_size=30M\nmemory_limit=256M" \
