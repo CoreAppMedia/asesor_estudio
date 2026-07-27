@@ -1,10 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { BookOpen, GraduationCap, ChevronRight, LogIn } from 'lucide-react';
+import React, { useEffect, useState, useRef } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { BookOpen, GraduationCap, ChevronRight, LogIn, LayoutDashboard, LogOut, ChevronDown, User } from 'lucide-react';
 
 export default function Home() {
+    const navigate = useNavigate();
     const [cursos, setCursos] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [adminUser, setAdminUser] = useState(null);
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+    const dropdownRef = useRef(null);
 
     useEffect(() => {
         const fetchCursos = async () => {
@@ -22,7 +26,46 @@ export default function Home() {
         };
 
         fetchCursos();
+
+        // Check if there's an active admin session
+        const storedUser = localStorage.getItem('admin_user');
+        const token = localStorage.getItem('admin_token');
+        if (storedUser && token) {
+            setAdminUser(JSON.parse(storedUser));
+        }
     }, []);
+
+    // Close dropdown when clicking outside
+    useEffect(() => {
+        const handleClickOutside = (e) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+                setDropdownOpen(false);
+            }
+        };
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => document.removeEventListener('mousedown', handleClickOutside);
+    }, []);
+
+    const handleLogout = async () => {
+        try {
+            const token = localStorage.getItem('admin_token');
+            await fetch('/api/logout', {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${token}`,
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                }
+            });
+        } catch (e) {
+            console.error('Logout error', e);
+        } finally {
+            localStorage.removeItem('admin_token');
+            localStorage.removeItem('admin_user');
+            setAdminUser(null);
+            setDropdownOpen(false);
+        }
+    };
 
     // Colores pastel para los semestres
     const colors = [
@@ -46,13 +89,60 @@ export default function Home() {
                             <span className="text-xs font-semibold tracking-wider text-gray-500 uppercase">UNAM</span>
                         </div>
                     </div>
-                    <Link
-                        to="/login"
-                        className="flex items-center gap-2 px-4 py-2 border-2 border-black rounded-xl font-bold bg-[#f7f7f5] hover:bg-gray-100 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] transition-all text-sm"
-                    >
-                        <LogIn className="w-4 h-4" />
-                        Acceso Docente
-                    </Link>
+
+                    {/* Auth Area */}
+                    {adminUser ? (
+                        <div className="relative" ref={dropdownRef}>
+                            <button
+                                onClick={() => setDropdownOpen(!dropdownOpen)}
+                                className="flex items-center gap-2 px-4 py-2 border-2 border-black rounded-xl font-bold bg-[#c5b0f4] hover:bg-[#b89ef0] shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] transition-all text-sm"
+                            >
+                                <div className="w-6 h-6 bg-black text-white rounded-md flex items-center justify-center shrink-0">
+                                    <User className="w-3.5 h-3.5" />
+                                </div>
+                                <span className="hidden sm:block max-w-[120px] truncate">{adminUser.name}</span>
+                                <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${dropdownOpen ? 'rotate-180' : ''}`} />
+                            </button>
+
+                            {/* Dropdown Menu */}
+                            {dropdownOpen && (
+                                <div className="absolute right-0 mt-2 w-52 bg-white border-2 border-black rounded-xl shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] overflow-hidden z-50">
+                                    {/* User info header */}
+                                    <div className="px-4 py-3 bg-[#f4ecd6] border-b-2 border-black">
+                                        <p className="font-black text-sm truncate">{adminUser.name}</p>
+                                        <p className="text-xs text-gray-500 truncate">{adminUser.email}</p>
+                                    </div>
+
+                                    {/* Menu items */}
+                                    <div className="p-2 space-y-1">
+                                        <Link
+                                            to="/admin/dashboard"
+                                            onClick={() => setDropdownOpen(false)}
+                                            className="flex items-center gap-3 px-3 py-2.5 rounded-lg font-bold text-sm text-gray-700 hover:bg-[#dceeb1] hover:text-black border-2 border-transparent hover:border-black transition-all"
+                                        >
+                                            <LayoutDashboard className="w-4 h-4" />
+                                            Panel Administrativo
+                                        </Link>
+                                        <button
+                                            onClick={handleLogout}
+                                            className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg font-bold text-sm text-red-700 hover:bg-[#efd4d4] hover:text-red-900 border-2 border-transparent hover:border-black transition-all"
+                                        >
+                                            <LogOut className="w-4 h-4" />
+                                            Cerrar Sesión
+                                        </button>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+                    ) : (
+                        <Link
+                            to="/login"
+                            className="flex items-center gap-2 px-4 py-2 border-2 border-black rounded-xl font-bold bg-[#f7f7f5] hover:bg-gray-100 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] transition-all text-sm"
+                        >
+                            <LogIn className="w-4 h-4" />
+                            Acceso Docente
+                        </Link>
+                    )}
                 </div>
             </header>
 
