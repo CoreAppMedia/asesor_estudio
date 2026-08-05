@@ -368,4 +368,67 @@ class EvaluacionSesionTest extends TestCase
         $this->assertStringContainsString('Pérez', $content);
         $this->assertStringContainsString('Número Lista', $content);
     }
+
+    public function test_semester_level_evaluation_creation_and_attempt()
+    {
+        // 1. Crear otra unidad en el mismo semestre con una pregunta
+        $otraUnidad = Unidad::create([
+            'semestre_id' => $this->semestre->id,
+            'numero' => 2,
+            'nombre' => 'Unidad 2',
+        ]);
+
+        $preguntaUnidad2 = Pregunta::create([
+            'unidad_id' => $otraUnidad->id,
+            'texto_pregunta' => "Pregunta de la Unidad 2",
+            'tipo_pregunta' => 'opcion_multiple',
+            'opciones_json' => ['A' => 'A', 'B' => 'B'],
+            'respuesta_correcta' => 'A'
+        ]);
+
+        // 2. Crear una evaluación para todo el semestre a través de la API
+        $response = $this->withHeaders($this->getHeaders())
+            ->postJson('/api/evaluaciones', [
+                'nombre' => 'Repaso General del Semestre I',
+                'semestre_id' => $this->semestre->id,
+                'total_preguntas' => 3,
+                'tiempo_limite_minutos' => 45,
+            ]);
+
+        $response->assertStatus(201);
+        $evaluacionId = $response->json('id');
+
+        $this->assertDatabaseHas('evaluaciones', [
+            'id' => $evaluacionId,
+            'semestre_id' => $this->semestre->id,
+            'unidad_id' => null,
+            'total_preguntas' => 3
+        ]);
+
+        // 3. Crear sesión para esta evaluación
+        $sesionSemestre = Sesion::create([
+            'grupo_id' => $this->grupo->id,
+            'evaluacion_id' => $evaluacionId,
+            'codigo_acceso' => 'SEMX1',
+            'activa' => true,
+        ]);
+
+        // 4. Iniciar intento como alumno
+        $responseIntento = $this->postJson('/api/public/sesiones/iniciar', [
+            'codigo_acceso' => 'SEMX1',
+            'alumno_id' => $this->alumno->id,
+            'celular_ultimos_cuatro' => '5678',
+        ]);
+
+        $responseIntento->assertStatus(201);
+        $intentoId = $responseIntento->json('intento_id');
+        
+        // El intento debe tener resultados para las preguntas de ambas unidades
+        $resultados = Resultado::where('intento_id', $intentoId)->get();
+        $this->assertCount(3, $resultados);
+
+        $preguntaIds = $resultados->pluck('pregunta_id')->toArray();
+        $this->assertContains($this->preguntaMC->id, $preguntaIds);
+        $this->assertContains($preguntaUnidad2->id, $preguntaIds);
+    }
 }

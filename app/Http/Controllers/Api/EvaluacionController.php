@@ -10,7 +10,7 @@ class EvaluacionController extends Controller
 {
     public function index()
     {
-        $evaluaciones = Evaluacion::with('unidad.semestre.materia')
+        $evaluaciones = Evaluacion::with(['unidad.semestre.materia', 'semestre.materia'])
             ->orderBy('id', 'desc')
             ->get();
 
@@ -21,31 +21,45 @@ class EvaluacionController extends Controller
     {
         $validated = $request->validate([
             'nombre' => 'required|string|max:255',
-            'unidad_id' => 'required|exists:cat_unidades,id',
+            'unidad_id' => 'required_without:semestre_id|nullable|exists:cat_unidades,id',
+            'semestre_id' => 'required_without:unidad_id|nullable|exists:cat_semestres,id',
             'total_preguntas' => 'required|integer|min:1',
             'tiempo_limite_minutos' => 'required|integer|min:1',
         ]);
 
+        if (isset($validated['semestre_id']) && $validated['semestre_id']) {
+            $validated['unidad_id'] = null;
+        } else {
+            $validated['semestre_id'] = null;
+        }
+
         $evaluacion = Evaluacion::create($validated);
-        return response()->json($evaluacion->load('unidad.semestre.materia'), 201);
+        return response()->json($evaluacion->load(['unidad.semestre.materia', 'semestre.materia']), 201);
     }
 
     public function show(Evaluacion $evaluacion)
     {
-        return response()->json($evaluacion->load('unidad.semestre.materia'));
+        return response()->json($evaluacion->load(['unidad.semestre.materia', 'semestre.materia']));
     }
 
     public function update(Request $request, Evaluacion $evaluacion)
     {
         $validated = $request->validate([
             'nombre' => 'required|string|max:255',
-            'unidad_id' => 'required|exists:cat_unidades,id',
+            'unidad_id' => 'required_without:semestre_id|nullable|exists:cat_unidades,id',
+            'semestre_id' => 'required_without:unidad_id|nullable|exists:cat_semestres,id',
             'total_preguntas' => 'required|integer|min:1',
             'tiempo_limite_minutos' => 'required|integer|min:1',
         ]);
 
+        if (isset($validated['semestre_id']) && $validated['semestre_id']) {
+            $validated['unidad_id'] = null;
+        } else {
+            $validated['semestre_id'] = null;
+        }
+
         $evaluacion->update($validated);
-        return response()->json($evaluacion->load('unidad.semestre.materia'));
+        return response()->json($evaluacion->load(['unidad.semestre.materia', 'semestre.materia']));
     }
 
     public function destroy(Evaluacion $evaluacion)

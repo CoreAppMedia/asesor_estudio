@@ -9,11 +9,16 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Evaluacion extends Model
 {
     protected $table = 'evaluaciones';
-    protected $fillable = ['nombre', 'unidad_id', 'total_preguntas', 'tiempo_limite_minutos'];
+    protected $fillable = ['nombre', 'unidad_id', 'semestre_id', 'total_preguntas', 'tiempo_limite_minutos'];
 
     public function unidad(): BelongsTo
     {
         return $this->belongsTo(Unidad::class, 'unidad_id');
+    }
+
+    public function semestre(): BelongsTo
+    {
+        return $this->belongsTo(Semestre::class, 'semestre_id');
     }
 
     public function sesiones(): HasMany

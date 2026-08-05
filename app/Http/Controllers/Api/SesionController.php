@@ -233,10 +233,18 @@ class SesionController extends Controller
 
         // Si es un intento nuevo, seleccionar preguntas de forma aleatoria
         $totalPreguntasExamen = $sesion->evaluacion->total_preguntas;
-        $preguntas = Pregunta::where('unidad_id', $sesion->evaluacion->unidad_id)
-            ->inRandomOrder()
-            ->take($totalPreguntasExamen)
-            ->get();
+        if ($sesion->evaluacion->semestre_id) {
+            $unidadIds = \App\Models\Unidad::where('semestre_id', $sesion->evaluacion->semestre_id)->pluck('id');
+            $preguntas = Pregunta::whereIn('unidad_id', $unidadIds)
+                ->inRandomOrder()
+                ->take($totalPreguntasExamen)
+                ->get();
+        } else {
+            $preguntas = Pregunta::where('unidad_id', $sesion->evaluacion->unidad_id)
+                ->inRandomOrder()
+                ->take($totalPreguntasExamen)
+                ->get();
+        }
 
         if ($preguntas->isEmpty()) {
             return response()->json([
@@ -575,7 +583,12 @@ class SesionController extends Controller
 
         $promedioGrupal = $finalizadoCount > 0 ? round($sumaPromedios / $finalizadoCount, 1) : 0;
 
-        $preguntas = Pregunta::where('unidad_id', $sesion->evaluacion->unidad_id)->get();
+        if ($sesion->evaluacion->semestre_id) {
+            $unidadIds = \App\Models\Unidad::where('semestre_id', $sesion->evaluacion->semestre_id)->pluck('id');
+            $preguntas = Pregunta::whereIn('unidad_id', $unidadIds)->get();
+        } else {
+            $preguntas = Pregunta::where('unidad_id', $sesion->evaluacion->unidad_id)->get();
+        }
         
         $resultadosFinalizados = Resultado::whereIn('intento_id', $intentos->whereNotNull('finalizado_at')->pluck('id'))
             ->get()

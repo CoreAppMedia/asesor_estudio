@@ -59,7 +59,13 @@ class DatabaseSeeder extends Seeder
             $this->command->info('JSON files already exist. Skipping generation to preserve Git content.');
         }
 
-        // 5. Invalidar la caché de la lista de cursos para que la página de inicio cargue los nuevos datos de inmediato
+        // 5. Cargar evaluaciones de semestre
+        $this->call([
+            EvaluacionSemestreSeeder::class,
+        ]);
+        $this->command->info('Semester evaluations seeded successfully.');
+
+        // 6. Invalidar la caché de la lista de cursos para que la página de inicio cargue los nuevos datos de inmediato
         \Illuminate\Support\Facades\Cache::forget('cursos_lista_completa');
     }
 }

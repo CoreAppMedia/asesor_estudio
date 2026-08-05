@@ -76,19 +76,25 @@ export default function Evaluaciones() {
     const openEditModal = (evaluacion) => {
         setEditingEvaluacion(evaluacion);
         setNombre(evaluacion.nombre);
-        // Find Semester ID for this unit
+        
         let foundSemId = '';
-        for (const materia of cursos) {
-            for (const sem of materia.semestres) {
-                const hasUnidad = sem.unidades.some(u => u.id === evaluacion.unidad_id);
-                if (hasUnidad) {
-                    foundSemId = sem.id.toString();
-                    break;
+        if (evaluacion.semestre_id) {
+            foundSemId = evaluacion.semestre_id.toString();
+            setSelUnidadId('todo_semestre');
+        } else {
+            for (const materia of cursos) {
+                for (const sem of materia.semestres) {
+                    const hasUnidad = sem.unidades.some(u => u.id === evaluacion.unidad_id);
+                    if (hasUnidad) {
+                        foundSemId = sem.id.toString();
+                        break;
+                    }
                 }
             }
+            setSelUnidadId(evaluacion.unidad_id ? evaluacion.unidad_id.toString() : '');
         }
+        
         setSelSemestreId(foundSemId);
-        setSelUnidadId(evaluacion.unidad_id.toString());
         setTotalPreguntas(evaluacion.total_preguntas.toString());
         setTiempoLimite(evaluacion.tiempo_limite_minutos.toString());
         setErrorMessage(null);
@@ -107,10 +113,17 @@ export default function Evaluaciones() {
 
         const payload = {
             nombre,
-            unidad_id: parseInt(selUnidadId),
             total_preguntas: parseInt(totalPreguntas),
             tiempo_limite_minutos: parseInt(tiempoLimite)
         };
+
+        if (selUnidadId === 'todo_semestre') {
+            payload.semestre_id = parseInt(selSemestreId);
+            payload.unidad_id = null;
+        } else {
+            payload.unidad_id = parseInt(selUnidadId);
+            payload.semestre_id = null;
+        }
 
         try {
             const url = editingEvaluacion 
@@ -229,12 +242,18 @@ export default function Evaluaciones() {
                                         <div className="flex items-center gap-2">
                                             <BookOpen className="w-4 h-4 text-gray-500" />
                                             <span>
-                                                {eva.unidad?.semestre?.materia?.nombre || 'Matemáticas'} - Semestre {eva.unidad?.semestre?.numero || ''}
+                                                {eva.unidad?.semestre?.materia?.nombre || eva.semestre?.materia?.nombre || 'Matemáticas'} - Semestre {eva.unidad?.semestre?.numero || eva.semestre?.numero || ''}
                                             </span>
                                         </div>
-                                        <div className="bg-[#f0f9ff] text-[#0369a1] border border-sky-300 p-2 rounded-lg text-xs font-semibold">
-                                            Unidad {eva.unidad?.numero}: {eva.unidad?.nombre}
-                                        </div>
+                                        {eva.unidad ? (
+                                            <div className="bg-[#f0f9ff] text-[#0369a1] border border-sky-300 p-2 rounded-lg text-xs font-semibold">
+                                                Unidad {eva.unidad.numero}: {eva.unidad.nombre}
+                                            </div>
+                                        ) : (
+                                            <div className="bg-[#f5e6fe] text-[#6d28d9] border border-purple-300 p-2 rounded-lg text-xs font-semibold">
+                                                Examen de Todo el Semestre {eva.semestre?.numero} ({eva.semestre?.descripcion})
+                                            </div>
+                                        )}
                                         <div className="flex items-center gap-2 pt-2">
                                             <Clipboard className="w-4 h-4 text-gray-500" />
                                             <span>Reactivos: <span className="underline decoration-2">{eva.total_preguntas} preguntas</span></span>
@@ -302,7 +321,7 @@ export default function Evaluaciones() {
                                     </div>
 
                                     <div className="space-y-1">
-                                        <label className="block text-sm font-black uppercase tracking-wider text-gray-700">Unidad</label>
+                                        <label className="block text-sm font-black uppercase tracking-wider text-gray-700">Unidad / Nivel</label>
                                         <select
                                             value={selUnidadId}
                                             disabled={!selSemestreId}
@@ -310,6 +329,9 @@ export default function Evaluaciones() {
                                             className="w-full border-2 border-black rounded-xl p-3 font-bold focus:outline-none focus:bg-gray-50 transition-colors disabled:bg-gray-100 disabled:cursor-not-allowed"
                                         >
                                             <option value="">Selecciona unidad</option>
+                                            {selSemestreId && (
+                                                <option value="todo_semestre">Todo el Semestre (Repaso / Examen Final)</option>
+                                            )}
                                             {getSemestreUnidades().map(u => (
                                                 <option key={u.id} value={u.id}>
                                                     U{u.numero}. {u.nombre}
