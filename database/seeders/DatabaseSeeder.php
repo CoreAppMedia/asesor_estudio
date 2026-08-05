@@ -43,10 +43,14 @@ class DatabaseSeeder extends Seeder
         if (\App\Models\Pregunta::count() === 0) {
             $this->call([
                 PreguntaSeeder::class,
+                PreguntasAdicionalesSeeder::class,
             ]);
-            $this->command->info('Questions seeded successfully.');
+            $this->command->info('Questions and additional questions seeded successfully.');
         } else {
-            $this->command->info('Questions already exist in the database. Skipping.');
+            $this->call([
+                PreguntasAdicionalesSeeder::class,
+            ]);
+            $this->command->info('Additional questions verified/seeded.');
         }
 
         // 4. Asegurar que los archivos JSON de contenido estén generados si no existen
